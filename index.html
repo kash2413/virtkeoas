@@ -1,0 +1,2407 @@
+<!doctype html>
+<html lang="it-IT">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TLMZMBX');</script>
+<!-- End Google Tag Manager -->
+  <!--preconnect -->
+  <link rel="preconnect" href="https://assets.deltapictures.it" crossorigin="use-credentials">
+
+  
+    
+            <!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+            <script type="text/javascript" async="true">
+            (function() {
+            var host = window.location.hostname;
+            var element = document.createElement('script');
+            var firstScript = document.getElementsByTagName('script')[0];
+            var url = 'https://quantcast.mgr.consensu.org'.concat('/choice/', 'zempfe9XwTUGE', '/', host, '/choice.js')
+            var uspTries = 0;
+            var uspTriesLimit = 3;
+            element.async = true;
+            element.type = 'text/javascript';
+            element.src = url;
+
+            firstScript.parentNode.insertBefore(element, firstScript);
+
+            function makeStub() {
+                var TCF_LOCATOR_NAME = '__tcfapiLocator';
+                var queue = [];
+                var win = window;
+                var cmpFrame;
+
+                function addFrame() {
+                var doc = win.document;
+                var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+                if (!otherCMP) {
+                    if (doc.body) {
+                    var iframe = doc.createElement('iframe');
+
+                    iframe.style.cssText = 'display:none';
+                    iframe.name = TCF_LOCATOR_NAME;
+                    doc.body.appendChild(iframe);
+                    } else {
+                    setTimeout(addFrame, 5);
+                    }
+                }
+                return !otherCMP;
+                }
+
+                function tcfAPIHandler() {
+                var gdprApplies;
+                var args = arguments;
+
+                if (!args.length) {
+                    return queue;
+                } else if (args[0] === 'setGdprApplies') {
+                    if (
+                    args.length > 3 &&
+                    args[2] === 2 &&
+                    typeof args[3] === 'boolean'
+                    ) {
+                    gdprApplies = args[3];
+                    if (typeof args[2] === 'function') {
+                        args[2]('set', true);
+                    }
+                    }
+                } else if (args[0] === 'ping') {
+                    var retr = {
+                    gdprApplies: gdprApplies,
+                    cmpLoaded: false,
+                    cmpStatus: 'stub'
+                    };
+
+                    if (typeof args[2] === 'function') {
+                    args[2](retr);
+                    }
+                } else {
+                    queue.push(args);
+                }
+                }
+
+                function postMessageEventHandler(event) {
+                var msgIsString = typeof event.data === 'string';
+                var json = {};
+
+                try {
+                    if (msgIsString) {
+                    json = JSON.parse(event.data);
+                    } else {
+                    json = event.data;
+                    }
+                } catch (ignore) {}
+
+                var payload = json.__tcfapiCall;
+
+                if (payload) {
+                    window.__tcfapi(
+                    payload.command,
+                    payload.version,
+                    function(retValue, success) {
+                        var returnMsg = {
+                        __tcfapiReturn: {
+                            returnValue: retValue,
+                            success: success,
+                            callId: payload.callId
+                        }
+                        };
+                        if (msgIsString) {
+                        returnMsg = JSON.stringify(returnMsg);
+                        }
+                        event.source.postMessage(returnMsg, '*');
+                    },
+                    payload.parameter
+                    );
+                }
+                }
+
+                while (win) {
+                try {
+                    if (win.frames[TCF_LOCATOR_NAME]) {
+                    cmpFrame = win;
+                    break;
+                    }
+                } catch (ignore) {}
+
+                if (win === window.top) {
+                    break;
+                }
+                win = win.parent;
+                }
+                if (!cmpFrame) {
+                addFrame();
+                win.__tcfapi = tcfAPIHandler;
+                win.addEventListener('message', postMessageEventHandler, false);
+                }
+            };
+
+            makeStub();
+
+            var uspStubFunction = function() {
+                var arg = arguments;
+                if (typeof window.__uspapi !== uspStubFunction) {
+                setTimeout(function() {
+                    if (typeof window.__uspapi !== 'undefined') {
+                    window.__uspapi.apply(window.__uspapi, arg);
+                    }
+                }, 500);
+                }
+            };
+
+            var checkIfUspIsReady = function() {
+                uspTries++;
+                if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+                console.warn('USP is not accessible');
+                } else {
+                clearInterval(uspInterval);
+                }
+            };
+
+            if (typeof window.__uspapi === 'undefined') {
+                window.__uspapi = uspStubFunction;
+                var uspInterval = setInterval(checkIfUspIsReady, 6000);
+            }
+            })();
+            //END QUANTCAST
+
+            //COMSCORE START
+            var _comscore = _comscore || [];
+            document.addEventListener("DOMContentLoaded", function() {
+
+                var deltaComscore = {
+                    pushData: function(cs_ucfr) {
+                        var data = {
+                            c1: "2",
+                            c2: "29948965"
+                        }
+                        _comscore.push(data);
+                        deltaComscore.addScripts();
+                    },
+
+                    addScripts: function() {
+                        (function() {
+                            var s = document.createElement("script"),
+                                el = document.getElementsByTagName("script")[0];
+                            s.async = true;
+                            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/cs/29948965/beacon.js";
+                            el.parentNode.insertBefore(s, el);
+                        })();
+                    },
+
+                    run: function() {
+                        console.log("Comscore RUN");
+                        if (typeof window.__tcfapi !== 'undefined') {
+                            window.__tcfapi('ping', 2, function(pingData) { 
+                                //console.log("Comscore PING");
+                                window.__tcfapi('getTCData', 2, function(tcData, success) { 
+                                    //console.log('COMSCORE - QUANTCAST V2 cmp responded:', tcData, success);
+                                    if( tcData.vendor.consents.hasOwnProperty('77') && success) {
+                                        if(tcData.vendor.consents[77]) {
+                                            console.log("Comscore: 1");
+                                            deltaComscore.pushData('1');
+                                        } else {
+                                            console.log("Comscore: 0");
+                                            deltaComscore.pushData('0');
+                                        }
+                                    } else {
+                                        console.log("Comscore: EMPTY");
+                                        deltaComscore.pushData('');
+                                    }
+                                });
+                            });
+                        } else {
+                            deltaComscore.pushData('');
+                            console.log("Comscore: EMPTY - window.__tcfapi == 'undefined' ");
+                        }
+                    }
+                };
+                //Run COMSCORE
+                deltaComscore.run();
+            });
+
+            </script>
+            <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+            <noscript>
+                <img src="p">
+            </noscript>
+
+
+            <!-- Prior consent CMP V2 -->
+            <script>
+            function insertAdsByGoogleJs(){
+
+                //If window.personalized 
+                console.log("CMP: personalized? "+window.personalized);
+                if(!window.personalized){
+                    console.log("CMP: not-personalized adv triggered");
+                    //For not personalized
+                    (adsbygoogle=window.adsbygoogle||[]).requestNonPersonalizedAds=1;
+                }
+
+                //Unlock Google Ads
+                console.log("CMP: unlock adsbygoogle");
+                (adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=0;
+
+                //GPT
+                /*if (typeof googletag !== 'undefined')  { 
+                    console.log('CMP: googletag consent refresh');
+                    googletag.cmd.push(function(){ 
+                        googletag.pubads().refresh(); 
+                        console.log('CMP: Google googletag.pubads().refresh()');
+                    });
+                }//if googletag*/
+
+            }//insertAdsByGoogleJs
+
+            function sbloccajs() {
+                console.log('CMP V2: adv loaded');
+                var scripts = document.getElementsByClassName("cmp-script"),
+                    n = scripts.length,
+                    documentFragment = document.createDocumentFragment(),
+                    i, y, s, attrib, el;
+
+                for (i = 0; i < n; i++){
+
+                    s = document.createElement('script');
+                    s.type = 'text/javascript';
+                    for (y = 0; y < scripts[i].attributes.length; y++) {
+                        attrib = scripts[i].attributes[y];
+                        if (attrib.specified) {
+                            if ((attrib.name != 'type') && (attrib.name != 'class')){
+                                s.setAttribute(attrib.name, attrib.value);
+                            }
+                        }
+                    }
+                    s.innerHTML = scripts[i].innerHTML;
+                    documentFragment.appendChild(s);
+
+                }//for each adv
+                document.body.appendChild(documentFragment);
+
+                //Refresh Google With consent
+                insertAdsByGoogleJs();
+
+                //Inject Awin
+                var awin = document.createElement('script'); 
+                awin.src = 'https://www.dwin2.com/pub.402523.min.js'; 
+                document.getElementsByTagName('head')[0].appendChild(awin);
+            };
+
+            //Sblocca CMP 
+            __tcfapi('addEventListener', 2, function(tcData, success) { 
+                if (success && tcData.gdprApplies) {
+                    if (tcData.eventStatus === 'tcloaded' || tcData.eventStatus === 'useractioncomplete') {
+
+                        if(tcData.purpose.consents[2]){ 
+                            window.personalized = true; //personalized
+                        }else{ 
+                            window.personalized = false; //not personalized
+                        }
+
+                        console.log('CMP: tcloaded || useractioncomplete');
+
+                                                   sbloccajs(); 
+                                                  
+                    } else {
+                        console.log('Debug: tcData.eventStatus: ', tcData.eventStatus);
+                    }
+                }
+            });
+
+        </script>
+        <!-- Prior consent CMP V2 -->
+
+    
+
+
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<style id="critical-css">@charset "UTF-8";h1,h4{margin-top:0;margin-bottom:.5rem}.h5,h1,h4{margin-bottom:.5rem;font-weight:500;line-height:1.2}a{color:inherit}.h5,h1,h4{font-family:var(--primary-font);color:var(--grey-dark-one);font-weight:var(--p-semi-bold);line-height:1.4;margin-bottom:2rem}.premium .main-navigation .premium-btn{margin:0!important;width:auto;text-transform:none!important}:root{--primary-font:"Merriweather",serif;--secondary-font:"Source Sans Pro",sans-serif;--primary-color:#db0058;--blue:#007bff;--indigo:#6610f2;--purple:#6f42c1;--pink:#e83e8c;--red:#dc3545;--orange:#fd7e14;--yellow:#ffc107;--green:#28a745;--teal:#20c997;--cyan:#17a2b8;--white:#fff;--gray:#6c757d;--gray-dark:#343a40;--primary:#525ddc;--secondary:#6c757d;--success:#28a745;--info:#17a2b8;--warning:#ffc107;--danger:#dc3545;--light:#f8f9fa;--dark:#343a40;--breakpoint-xs:0;--breakpoint-sm:576px;--breakpoint-md:768px;--breakpoint-lg:992px;--breakpoint-xl:1200px;--font-family-sans-serif:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--font-family-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace}*,:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%}article,aside,header,main,nav,section{display:block}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h2,h3,h4{margin-top:0;margin-bottom:.5rem}p{margin-top:0;margin-bottom:1rem}ul{margin-bottom:1rem}ul{margin-top:0}ul ul{margin-bottom:0}strong{font-weight:bolder}a{color:#525ddc;text-decoration:none;background-color:transparent}img{border-style:none}img,svg{vertical-align:middle}svg{overflow:hidden}button{border-radius:0}button,input{margin:0;font-family:inherit;font-size:inherit;line-height:inherit}button,input{overflow:visible}button{text-transform:none}button{-webkit-appearance:button}button::-moz-focus-inner{padding:0;border-style:none}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}.h5,h1,h2,h3,h4{margin-bottom:.5rem;font-weight:500;line-height:1.2}h1{font-size:2.5rem}h2{font-size:2rem}h3{font-size:1.75rem}h4{font-size:1.5rem}.h5{font-size:1.25rem}.list-inline{padding-left:0;list-style:none}.img-fluid{max-width:100%;height:auto}.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media (min-width:576px){.container{max-width:540px}}@media (min-width:768px){.container{max-width:720px}}@media (min-width:992px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1140px}}.row{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.no-gutters{margin-right:0;margin-left:0}.no-gutters>.col{padding-right:0;padding-left:0}.col,.col-lg-12,.col-lg-4,.col-lg-6,.col-lg-8,.col-md-4{position:relative;width:100%;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;max-width:100%}@media (min-width:768px){.col-md-4{-webkit-box-flex:0;-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%}}@media (min-width:992px){.col-lg-4{-webkit-box-flex:0;-ms-flex:0 0 33.33333%;flex:0 0 33.33333%;max-width:33.33333%}.col-lg-6{-webkit-box-flex:0;-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}.col-lg-8{-webkit-box-flex:0;-ms-flex:0 0 66.66667%;flex:0 0 66.66667%;max-width:66.66667%}.col-lg-12{-webkit-box-flex:0;-ms-flex:0 0 100%;flex:0 0 100%;max-width:100%}}.form-group{margin-bottom:1rem}.btn-group{position:relative;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;vertical-align:middle}.nav{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}.nav-link{display:block;padding:.5rem 1rem}.nav-pills .nav-link{border-radius:.25rem}.nav-pills .nav-link.active{color:#fff;background-color:#525ddc}.navbar{position:relative;padding:.5rem 1rem}.navbar,.navbar>.container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.breadcrumb{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;padding:.75rem 1rem;margin-bottom:1rem;list-style:none;background-color:#e9ecef;border-radius:.25rem}.media{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.media-body{-webkit-box-flex:1;-ms-flex:1;flex:1}@media (min-width:992px){.d-lg-none{display:none!important}}.flex-column{-webkit-box-direction:normal!important}.flex-column{-webkit-box-orient:vertical!important;-ms-flex-direction:column!important;flex-direction:column!important}.justify-content-end{-webkit-box-pack:end!important;-ms-flex-pack:end!important;justify-content:flex-end!important}.justify-content-center{-webkit-box-pack:center!important;-ms-flex-pack:center!important;justify-content:center!important}.justify-content-between{-webkit-box-pack:justify!important;-ms-flex-pack:justify!important;justify-content:space-between!important}.align-items-center{-webkit-box-align:center!important;-ms-flex-align:center!important;align-items:center!important}.align-self-center{-ms-flex-item-align:center!important;align-self:center!important}@media (min-width:768px){.justify-content-md-start{-webkit-box-pack:start!important;-ms-flex-pack:start!important;justify-content:flex-start!important}}.mt-2{margin-top:.5rem!important}.mb-2{margin-bottom:.5rem!important}.ml-auto{margin-left:auto!important}.text-center{text-align:center!important}:root{--primary-font:"Poppins",sans-serif;--secondary-font:"Roboto",sans-serif;--font-awesome:"Font Awesome 5 Solid";--primary-color:#ff2c54;--secondary-color:#ff9500;--action-color:#fecc00;--grey-dark-key:#000;--grey-dark-one:#121213;--grey-dark-two:#494e51;--grey-dark-three:#6b7074;--grey-dark-four:#7b7b7b;--grey-dark-five:#2b2b2b;--grey-dark-six:#cecece;--grey-dark-seven:#1a1a1a;--grey-dark-eight:#3f3f3f;--grey-mid:#c1c6c9;--grey-light-one:#d3d7da;--grey-light-two:#f0f0f0;--grey-light-three:#f9f9f9;--border-color:#e6e6e6;--color-white:#fff;--color-success:#3eb75e;--color-warning:#ff8f3c;--color-info:#1ba2db;--color-danger:#ff0003;--color-facebook:#3b5997;--color-twitter:#1ba1f2;--color-youtube:#ed4141;--color-linkedin:#0077b5;--color-pinterest:#e60022;--color-instagram:#c231a1;--color-vimeo:#00adef;--color-twitch:#6441a3;--color-green-one:#4cd965;--color-green-two:#3cd289;--color-green-three:#008079;--color-blue-one:#007aff;--color-blue-two:#5ac8fa;--color-blue-three:#01abf2;--color-blue-four:#4c8ebc;--color-red-one:#ff3a30;--color-red-two:#ff4f00;--color-purple-one:#5856d5;--color-purple-two:#ca9cf4;--color-yellow-one:#ffd400;--color-yellow-two:#fde953;--color-blue-grey-one:#3f5573;--radius:4px;--radius-big:6px;--radius-small:2px;--p-light:300;--p-regular:400;--p-medium:500;--p-semi-bold:600;--p-bold:700;--p-extra-bold:800;--p-black:900;--s-light:300;--s-regular:400;--s-medium:500;--s-bold:700;--s-black:900;--shadow-light:0 2px 6px 0 rgba(0,0,0,.05);--shadow-dark:0 2px 6px 0 rgba(0,0,0,.2);--cubic-easing:cubic-bezier(0.86,0,0.07,1)}.m-b-xs-0{margin-bottom:0!important}.m-b-xs-10{margin-bottom:1rem!important}.m-b-xs-15{margin-bottom:1.5rem!important}.m-t-xs-30{margin-top:3rem!important}.m-r-xs-30{margin-right:3rem!important}.m-b-xs-40{margin-bottom:4rem!important}.p-t-xs-20{padding-top:2rem!important}html{font-size:10px;overflow-x:hidden}body,html{margin:0;padding:0}body{position:relative;font-family:var(--primary-font);font-size:1.6rem;line-height:1.7;color:var(--grey-dark-two)}iframe,img,svg{vertical-align:middle}p{margin-bottom:3rem}ul{font-family:var(--secondary-font);font-size:1.8rem;line-height:3rem;padding-left:3rem;margin-bottom:0}@media (max-width:991px){ul{font-size:16px}}a,button{outline:0}a,h4 a{color:inherit}.container{position:relative}@media (min-width:1599px){.container{max-width:1260px}}.list-inline{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.bg-grey-dark-one{background-color:var(--grey-dark-one)}.bg-grey-dark-seven{background-color:var(--grey-dark-seven)}.h5,h1,h2,h3,h4{font-family:var(--primary-font);color:var(--grey-dark-one);font-weight:var(--p-semi-bold);line-height:1.4;margin-bottom:2rem}h1{font-size:4.2rem}@media (max-width:991px){h1{font-size:3.2rem}}h2{font-size:3.6rem}@media (max-width:991px){h2{font-size:2.2rem}}h3{font-size:3rem}@media (max-width:991px){h3{font-size:2rem}}h4{font-size:2.4rem}.h5{font-size:1.8rem;line-height:1.6}p{font-family:var(--secondary-font);font-size:1.8rem;line-height:3rem;color:var(--grey-dark-two)}@media (max-width:991px){h4{font-size:1.8rem}.h5{font-size:1.6rem}p{font-size:16px}}.banner{background-size:cover;background-repeat:no-repeat;background-position:50%}.cat-btn{position:relative;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;font-family:var(--secondary-font);font-size:1.4rem;line-height:2.1rem;font-weight:var(--p-bold);letter-spacing:.1rem;color:#fff;border-radius:0;padding:.6rem 1.1rem .4rem;border:none;font-size:1.1rem;line-height:1.4rem;font-weight:var(--s-bold);z-index:1}.cat-btn:before{content:" ";width:0;height:100%;position:absolute;top:0;right:0;background-color:rgba(0,0,0,.1);z-index:-1}.btn-group{display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.btn-group a{margin:0 1rem 1rem 0}:-ms-input-placeholder{opacity:1}::-webkit-input-placeholder{color:var(--grey-dark-four);opacity:1}::-moz-placeholder{color:var(--grey-dark-four);opacity:1}::-ms-input-placeholder{opacity:1}::placeholder{color:var(--grey-dark-four);opacity:1}:-ms-input-placeholder,::-ms-input-placeholder{color:var(--grey-dark-four)}input[type=text]{display:block;width:100%;height:auto;border:none;background:0 0;font-family:var(--secondary-font);font-size:1.6rem;line-height:3rem;color:var(--grey-dark-one);padding:.9rem 2rem;border-radius:0;border:.2rem solid var(--grey-light-one);-webkit-appearance:none;-moz-appearance:none;appearance:none}.form-group{position:relative;margin-bottom:3rem}.social-share{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;list-style:none;padding:0;margin:0;overflow:hidden}.social-share li{margin-right:1rem}.social-share li a{font-size:2rem;color:var(--grey-dark-one)}.social-share__with-bg li a{display:block;width:3.2rem;height:3.2rem;background:var(--grey-dark-one);border-radius:100%;font-size:1.2rem;line-height:3.2rem;color:#fff;text-align:center}.brand-logo{max-width:17rem;max-height:5rem}.main-navigation{margin:0;padding:0 0 0 4.4rem}.main-navigation li{position:relative;margin-right:2rem;font-family:var(--primary-font);font-size:1.6rem;line-height:2.4rem;color:#fff;font-weight:var(--p-medium);padding:3.1rem .5rem 3rem}@media (max-width:1199px){.main-navigation li{margin-right:1rem}}.main-navigation a{position:relative;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;font-weight:inherit;display:inline}.main-navigation a:before{content:"";position:absolute;bottom:0;left:0;width:0;height:.2rem;background-color:currentColor}@media (max-width:991px){.main-nav-wrapper{display:none}.main-navigation{opacity:0;visibility:hidden}.main-navigation li{margin-right:0;padding:.5rem 0;width:100%;text-align:center;color:#fff}.main-navigation a{color:var(--color-white)}}.side-navigation li{padding:1rem 0}.navbar{padding:0;z-index:999}.navbar-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;width:100%;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.navbar-extra-features{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.navbar-search{position:absolute;width:100vw;height:100%;background:var(--grey-light-three);top:0;left:50%;-webkit-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;z-index:999999;visibility:hidden;opacity:0}.navbar-search .search-field{width:60%;margin:0 auto;position:relative}.navbar-search input{width:100%;height:100%;border:none;background:0 0;border-bottom:1px solid var(--grey-dark-one)}.navbar-search .navbar-search-btn{position:absolute;right:0;bottom:0;border:none;background:0 0;padding:.5rem 2rem}.navbar-search .navbar-search-close{position:absolute;top:50%;right:3rem;font-size:2.4rem;color:var(--grey-dark-one);margin-right:3rem;-webkit-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%)}@media (max-width:991px){.navbar{padding:2.2rem 0}.navbar-search .search-field{width:70%}.navbar-search .navbar-search-close{right:0;margin-right:2rem;margin-left:1rem}}.nav-search-field-toggler{position:relative;font-size:2rem;line-height:4.2rem;color:#fff;margin-right:2rem}.nav-search-field-toggler:after{content:" ";position:absolute;width:4rem;height:4rem;background:hsla(0,0%,100%,.1);top:50%;left:50%;margin:-2rem;border-radius:100%;-webkit-transform:scale(0);-o-transform:scale(0);transform:scale(0)}.side-nav-toggler{position:relative;display:inline-block;padding:.8rem 1rem;margin-left:1rem;margin-right:-1rem}.side-nav-toggler span{position:relative;display:block;width:1.8rem;height:.2rem;background:#fff;margin:.5rem 0}.side-nav-toggler:after{content:" ";position:absolute;width:4rem;height:4rem;background:hsla(0,0%,100%,.1);top:50%;left:50%;margin:-2rem;border-radius:100%;-webkit-transform:scale(0);-o-transform:scale(0);transform:scale(0)}.main-nav-toggler{bottom:2rem;right:2rem;width:4rem;border-radius:100%;z-index:9999;padding:.7rem 1rem;-webkit-box-shadow:0 .3rem .5rem rgba(0,0,0,.3);box-shadow:0 .3rem .5rem rgba(0,0,0,.3)}.main-nav-toggler .toggler-inner{position:fixed;bottom:2.7rem;right:3.1rem}.main-nav-toggler span{position:relative;display:block;width:1.9rem;height:.2rem;background:#fff;margin:.5rem 0}.navbar-toggler-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.navbar-toggler-wrapper .side-nav-toggler{padding:0;margin:0 2rem 0 0}@media (max-width:991px){.navbar__style-four{padding:1rem 0}}.navbar .container{position:static}.breadcrumb-wrapper{padding:2rem 0}.breadcrumb{background:0 0;padding:0;margin:0;border-radius:0}.breadcrumb a{font-size:1.4rem;line-height:2.2rem;color:var(--grey-dark-four)}.post-block{margin-bottom:3rem}.post-block>a{position:relative}.post-block .axil-post-title{font-size:1.8rem;line-height:2.8rem;margin-bottom:1.5rem}@media (max-width:991px){.post-block .axil-post-title{font-size:1.4rem;line-height:2.2rem;margin-bottom:1rem}}.post-block>a{display:block;margin-right:3rem;-ms-flex-item-align:start!important;align-self:flex-start!important;overflow:hidden}@media (max-width:767px){.brand-logo{max-height:5rem;max-width:13rem}.post-block>a{margin-right:2rem;-ms-flex-item-align:start!important;align-self:flex-start!important}}.post-block img{width:100%;max-width:15rem;margin:0!important}@media (max-width:767px){.post-block img{max-width:10rem;width:100%;margin:0!important}.post-block__small{display:-webkit-box;display:-ms-flexbox;display:flex}.post-block__small>a{margin:0 2rem 0 0}.post-block__small img{max-width:100%;margin:0!important}}.post-block__small{margin-bottom:2rem}.post-block__small .axil-post-title{font-size:1.4rem;line-height:2.4rem;margin-bottom:1rem}.post-block__small img{max-width:10rem}.post-cat-group{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.post-cat{display:block;font-family:var(--secondary-font);font-size:1.1rem;line-height:1.4rem;font-weight:var(--s-bold);margin:0 1rem 1rem 0;letter-spacing:.1rem}.post-metas ul{font-family:var(--primary-font);font-size:1.4rem;line-height:2.1rem;color:var(--grey-dark-four);font-weight:var(--p-light);margin:0}@media (max-width:991px){.post-metas ul{font-size:1.2rem}.banner__single-post img{margin-top:3rem}}.post-metas li{position:relative;margin-right:1rem}.banner-post-metas li{font-size:1.4rem;line-height:2.1rem;color:var(--grey-dark-four);margin-bottom:0}.hover-line a{position:relative;display:inline;background-image:-webkit-gradient(linear,left top,right top,from(currentColor),to(currentColor));background-image:-webkit-linear-gradient(left,currentColor,currentColor);background-image:-o-linear-gradient(left,currentColor 0,currentColor 100%);background-image:linear-gradient(90deg,currentColor,currentColor);background-size:0 2px;background-position:0 95%;padding:.1% 0;background-repeat:no-repeat;color:inherit}.post-sidebar{padding-left:3rem}@media (max-width:1199px){.post-sidebar{padding-left:0}}.banner{position:relative;background-color:var(--grey-light-three)}.banner__single-post{padding:6rem 0}.banner__standard{padding:0}@media (max-width:991px){.banner__standard{padding:6rem 0}.banner img{width:100%}.header-top{display:none}}article ul{margin-bottom:3rem}article li{margin-bottom:1rem}.single-blog-wrapper{margin:0;padding:0}.axil-post-title{font-size:3.6rem}.header-top{padding:.5rem 0;position:relative;z-index:999}.header-top li{display:block;font-family:var(--secondary-font);font-size:1.4rem;line-height:2.4rem;color:var(--grey-dark-six);font-weight:var(--s-regular);padding:.5rem}.header-top li span{margin-left:1.6rem}.header-top__style-two{padding:1.2rem 0}.header-top-nav{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;list-style:none;padding:0}.header-top__social-share li{margin:0 0 0 2rem}.header-top__social-share li a{font-size:1.4rem;line-height:2.4rem;color:var(--grey-dark-six);padding:0}.side-nav{width:60vw;height:100vh;background:var(--color-white);position:fixed;top:0;right:-61vw;z-index:9999;padding:10.5rem}.side-nav :-ms-input-placeholder{opacity:1}.side-nav ::-webkit-input-placeholder{color:var(--grey-mid);opacity:1}.side-nav ::-moz-placeholder{color:var(--grey-mid);opacity:1}.side-nav ::-ms-input-placeholder{opacity:1}.side-nav :-ms-input-placeholder,.side-nav ::-ms-input-placeholder{color:var(--grey-mid)}@media (max-width:1199px){.side-nav{width:100vw;right:-100vw;padding:2rem}}.side-nav__left{right:auto;left:-61vw}@media (max-width:1199px){.side-nav__left{left:-100vw}}.side-nav .side-navigation{padding:0;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}.side-nav .side-navigation li{font-size:3.6rem;line-height:5rem;color:var(--grey-dark-one);font-weight:var(--p-semi-bold);margin-bottom:3rem;padding:0;text-align:left}.side-nav .side-navigation li a{background:0 0}.side-nav .side-navigation a:before{display:none}.side-nav .side-navigation a:after{bottom:-3.5rem}.side-nav form{margin-bottom:8rem}@media (max-width:991px){.side-nav .side-navigation{visibility:visible;opacity:1;margin-bottom:1.5rem}.side-nav .side-navigation li{font-size:2rem;line-height:2rem}.side-nav .side-navigation a{color:inherit}.side-nav .side-navigation li{font-size:1.6rem;line-height:2.6rem;margin-bottom:1rem}.side-nav form{margin-bottom:4rem}.side-nav form{font-size:2rem;bottom:.5rem}}.side-nav .side-nav-search-btn{position:absolute;right:0;bottom:1.8rem;border:none;background:0 0;padding:0}.side-nav input{font-family:var(--primary-font);font-size:3rem;line-height:3.2rem;color:var(--grey-dark-one);font-weight:var(--p-medium);padding:1.9rem 0;border:none;border-bottom:2px solid var(--grey-mid)}@media (max-width:767px){.axil-post-title{font-size:2.4rem}.side-nav .side-nav-search-btn{bottom:1rem;right:2rem}.side-nav input{font-size:1.6rem;padding:.9rem 0}}.axil-contact-info-inner{padding:0;margin-bottom:3rem}.close-sidenav{position:absolute;top:5rem;right:10.5rem;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;width:4.6rem;height:4.6rem;border-radius:100%;padding:0;z-index:9}.close-sidenav div{width:2rem;height:.2rem;background:var(--grey-dark-one)}.close-sidenav div:first-of-type{-webkit-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}.close-sidenav div:nth-of-type(2){-webkit-transform:rotate(-45deg) translate(1px,-1px);-o-transform:rotate(-45deg) translate(1px,-1px);transform:rotate(-45deg) translate(1px,-1px)}.side-navigation li{opacity:0;left:-5rem}.side-nav-inner{height:100%;overflow-x:hidden;padding:5rem 1.5rem}.side-nav-content .axil-contact-info-inner{padding:.7rem 0 0}.axil-contact-info-inner{background:#fff;padding:5rem}@media (max-width:991px){.close-sidenav{top:1rem;right:1rem}.axil-contact-info-inner{padding:4rem 2rem}}.contact-social-share{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-ms-flex-wrap:wrap;flex-wrap:wrap}.contact-social-share .axil-social-title{margin-bottom:0;margin-right:2rem}.contact-social-share .social-share li{margin-right:1rem}.sidebar-post-widget .nav-pills{border:0 solid var(--grey-light-one);border-width:0 0 .1rem .1rem;margin-bottom:2rem}.sidebar-post-widget .nav-pills li{display:block;margin-bottom:0;text-transform:none}.sidebar-post-widget .nav-pills li a{font-family:var(--secondary-font);font-size:1.2rem;line-height:1.6rem;color:var(--grey-mid);text-transform:uppercase;letter-spacing:.1rem;font-weight:var(--s-bold);text-align:center;padding:1.3rem 1rem;border:0 solid var(--grey-light-one);border-width:.1rem .1rem 0 0;border-radius:0}.sidebar-post-widget .nav-pills li a.active{background-color:var(--primary-color);border-color:var(--primary-color);color:#fff}.side-nav-inner{max-width:100%!important}.close-sidenav{z-index:99999999999!important}.content{padding:0}.single #masthead{margin-top:-10px}.page-header{display:contents}.sticky{position:sticky;height:50px;top:0;width:100%;max-width:100%;z-index:600}.header-top a{font-family:var(--primary-font)}.main-nav-toggler{display:none;position:fixed;top:0;left:0;width:100%;height:4rem;background:var(--primary-color);border-radius:0}.main-nav-toggler .toggler-inner{position:relative;bottom:auto;right:auto}.main-nav-toggler{height:3.5rem;padding:5px 15px}.main-nav-toggler span{display:inline-grid}.header-focus-single span{font-weight:700;clear:both;width:100%;display:block;border-bottom:1px solid hsla(0,0%,100%,.66);margin-bottom:15px}.header-focus-single a{font-family:var(--primary-font);font-size:22px;padding:15px 0}.contact-social-share{margin:0;padding:15px 0;border-top:1px solid #ececec}.cat-btn{text-transform:uppercase;margin:0}.entry-content h2{font-size:2.5rem}.banner__single-post{padding:1.5rem 0;border-bottom:1px solid #ececec}.offscreen{position:absolute}.adv{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}#masthead{padding:15px 0;border:1px solid #ececec;border-top:none}.brand-menu{margin:15px 0;padding:15px 0}.brand-menu img{max-width:100%;width:150px}.header-top__style-two{padding:.5rem 0}.post-details{word-break:break-word}.deltanet{margin-right:5px}.tags-navigation{list-style:none}.newsletter-header-cta h4{font-size:1.5rem;text-transform:uppercase}.sidebar-post-widget .nav-pills{border:0!important}#info-box{width:100%;overflow:auto;padding:10px 25px;border-bottom:1px solid #ececec;margin-bottom:15px}#titolo-ingredienti{font-size:1.6rem}#ingredienti-box{width:60%;float:left;border-right:1px solid #ececec}#cotture-box{width:40%;float:left;padding-left:5%}@media (max-width:576px){#ingredienti-box{width:100%;padding-bottom:10px;border-right:none;border-bottom:1px solid #ececec}#cotture-box{width:100%;padding-left:0;padding-top:10px}}.main-content{background:#fff}.sub-menu{padding:0!important}.sub-menu,.sub-menu li{width:100%;margin:0!important}.sub-menu li{opacity:1;left:0;padding:5px 0!important;font-size:1.2rem!important;line-height:1.4rem!important}.side-nav .side-navigation li{list-style:none!important}.mobile-tags-menu h3{margin:0!important;font-size:16px!important}.mobile-tags-menu ul{margin:0!important;padding:0!important}.mobile-tags-menu li{list-style:none;float:none!important}.mobile-tags-menu a{font-size:14px!important}.ricettario-trigger{width:100%!important;padding:0 10px!important;border-radius:50px!important}.list-auth{list-style:none!important}.post-block img{height:auto!important}.boxed .main-content,.boxed .navbar-search{width:1000px;max-width:100%;margin:0 auto}.boxed .sticky{width:1000px}.boxed .content{border-left:1px solid #ececec;border-right:1px solid #ececec}.boxed .post-block>a{margin-right:2rem}.boxed .post-sidebar{padding-left:0}.boxed .breadcrumb-wrapper{padding:1rem 0;border-bottom:1px solid #ececec}:root{--primary-color:#ffa24f}.primo-chef .site-main-color-bg{background:#ffa24f;color:#fff}.primo-chef .header-light{background:#f7f7f7;color:#ffa24f;border-top:5px solid #ffa24f;border-left:1px solid #ececec;border-right:1px solid #ececec}.primo-chef .header-light-secondary{background:#ffa24f;color:#fff}.primo-chef .newsletter-header-cta h4{border-bottom:2px solid #ffa24f;color:#ffa24f}.primo-chef .sidebar-post-widget .nav-pills li a.active{background-color:#ffa24f;border-color:#ffa24f;color:#fff}.primo-chef .mobile-tags-menu h3{color:#ffa24f!important}.primo-chef .header-light .header-top__social-share li a,.primo-chef .header-light li{color:#ffa24f}.hide-on-mobile{display:none}.premium .list-auth li{float:left}.premium .premium-btn{padding:0 10px!important;background:#cc2b1e!important;margin:0 10px!important;font-weight:700!important;font-size:14px!important;color:#fff!important;text-transform:uppercase}@media (min-width:992px){.sub-menu li{font-size:2rem!important;line-height:2.5rem!important}.side-nav .side-navigation li{width:90%!important}.brand-menu{border-bottom:1px solid #ececec}.contact-social-share{margin:0;padding:0;border:none}.header-focus-single span{clear:none;width:auto;display:inline;border-bottom:none;margin-bottom:0;font-size:14px}.header-focus-single a{font-size:16px;padding:0}.hide-on-mobile{display:table-row}.premium .premium-btn{margin:5px 0!important}}.premium .premium-btn a{color:#fff!important}.premium .brand-logo-container{position:relative;right:-35px}div.scrollmenu{display:none}.breadcrumb_last{color:var(--grey-dark-four)}.breadcrumb span a,.breadcrumb_last{font-size:10px!important;position:relative;top:-2px}.breadcrumb span a{display:inline-block}@media (max-width:992px){.tags-navigation-mobile,div.scrollmenu{margin:0;padding:0}div.scrollmenu{display:none;background:#f7f7f7;overflow:auto;white-space:nowrap;position:relative;z-index:999}.scrollmenu{scrollbar-width:thin;scrollbar-color:green #f7f7f7}.scrollmenu::-webkit-scrollbar{height:8px}.scrollmenu::-webkit-scrollbar-track{background:#f7f7f7}.scrollmenu::-webkit-scrollbar-thumb{background-color:green;border-radius:0;border:1px solid #f7f7f7}div.scrollmenu li{display:inline-block;text-align:center;padding:0;text-decoration:none;font-family:Poppins;line-height:18px;margin:0}div.scrollmenu li a{padding:15px 10px;color:#333;display:block;margin:0}.scrollmenu{display:block!important}.main-navigation li{line-height:1.2rem}.breadcrumb span a,.breadcrumb_last{font-size:8px!important}.boxed .breadcrumb-wrapper{padding:0}}</style>
+	<!-- This site is optimized with the Yoast SEO plugin v16.1.1 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Frullati dimagranti: 5 ricette dietetiche con frutta e verdura</title>
+	<meta name="description" content="Perdere qualche chilo di troppo è semplice con l&#039;aiuto dei frullati dimagranti. Ecco quali sono i più efficaci che abbiamo provato per voi.">
+	<link rel="canonical" href="https://primochef.it/frullati-dimagranti/ricette/">
+	<meta property="og:locale" content="it_IT">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Frullati dimagranti: 5 ricette dietetiche con frutta e verdura">
+	<meta property="og:description" content="Perdere qualche chilo di troppo è semplice con l&#039;aiuto dei frullati dimagranti. Ecco quali sono i più efficaci che abbiamo provato per voi.">
+	<meta property="og:url" content="https://primochef.it/frullati-dimagranti/ricette/">
+	<meta property="og:site_name" content="Primo Chef">
+	<meta property="article:publisher" content="https://www.facebook.com/primochef.it/">
+	<meta property="article:published_time" content="2020-12-28T07:29:00+00:00">
+	<meta property="article:modified_time" content="2021-02-01T10:26:39+00:00">
+	<meta property="og:image" content="images/SH_frullato_ai_frutti_di_bosco.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="800">
+	<meta name="twitter:label1" content="Scritto da">
+	<meta name="twitter:data1" content="Beatrice Piselli">
+	<meta name="twitter:label2" content="Tempo di lettura stimato">
+	<meta name="twitter:data2" content="4 minuti">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//s.w.org">
+<link rel="stylesheet" href="css/frontend.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="css/print.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="css/pmpro-add-paypal-express.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="css/dashicons.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="css/main_5d641328.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="css/theme_5d641328.css" media="print" onload="this.media='all'"><script type="text/javascript">(function(a,d){if(a._nsl===d){a._nsl=[];var c=function(){if(a.jQuery===d)setTimeout(c,33);else{for(var b=0;b<a._nsl.length;b++)a._nsl[b].call(a,a.jQuery);a._nsl={push:function(b){b.call(a,a.jQuery)}}}};c()}})(window);</script><script type="text/javascript" id="eio-lazy-load-js-extra">
+/* <![CDATA[ */
+var eio_lazy_vars = {"exactdn_domain":"","skip_autoscale":"0"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="js/lazysizes.min.js" id="eio-lazy-load-js"></script>
+<link rel="https://api.w.org/" href="https://primochef.it/wp-json/"><link rel="alternate" type="application/json" href="https://primochef.it/wp-json/wp/v2/posts/196786"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://primochef.it/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://primochef.it/wp-includes/wlwmanifest.xml"> 
+<link rel="shortlink" href="https://primochef.it/?p=196786">
+<link rel="alternate" type="application/json+oembed" href="https://primochef.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprimochef.it%2Ffrullati-dimagranti%2Fricette%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://primochef.it/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fprimochef.it%2Ffrullati-dimagranti%2Fricette%2F&#038;format=xml">
+<!-- Schema optimized by Schema Pro --><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/primochef.it\/frullati-dimagranti\/ricette\/"},"headline":"Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine","image":{"@type":"ImageObject","url":"https:\/\/primochef.it\/wp-content\/uploads\/2020\/12\/SH_frullato_ai_frutti_di_bosco.jpg","width":1200,"height":800},"datePublished":"2020-12-28T08:29:00+0000","dateModified":"2021-02-01T11:26:39+0000","author":{"@type":"Person","name":"Beatrice Piselli"},"publisher":{"@type":"Organization","name":"Primo Chef","logo":{"@type":"ImageObject","url":"https:\/\/primochef.it\/wp-content\/uploads\/2018\/02\/logo_primochef-180x60.png"}}}</script><!-- / Schema optimized by Schema Pro --><!-- organization Schema optimized by Schema Pro --><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"NewsMediaOrganization","name":"Primo Chef","url":"https:\/\/primochef.it","logo":{"@type":"ImageObject","url":"https:\/\/primochef.it\/wp-content\/uploads\/2018\/02\/logo_primochef.png","width":450,"height":150},"sameAs":["https:\/\/www.facebook.com\/primochef.it\/","https:\/\/www.instagram.com\/primo_chef\/"]}</script><!-- / organization Schema optimized by Schema Pro --><!-- breadcrumb Schema optimized by Schema Pro --><script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/primochef.it\/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/primochef.it\/frullati-dimagranti\/ricette\/","name":"Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine"}}]}</script><!-- / breadcrumb Schema optimized by Schema Pro -->      <meta name="onesignal" content="wordpress-plugin">
+            <script>
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("https://primochef.it");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '74b0eb12-ccd5-4a71-b52d-918a9e930957';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "Primo Chef";
+oneSignal_options['welcomeNotification']['message'] = "Grazie per esserti iscritto!";
+oneSignal_options['welcomeNotification']['url'] = "https://primochef.it";
+oneSignal_options['path'] = "https://primochef.it/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.09714a24-a3bb-414f-8109-d75a4f07e6fa";
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['promptOptions']['actionMessage'] = "Attiva le notifiche per ricevere le nostre ricette.";
+oneSignal_options['promptOptions']['exampleNotificationTitleDesktop'] = "Questa è una notifica di esempio";
+oneSignal_options['promptOptions']['exampleNotificationMessageDesktop'] = "Le notifiche appariranno sul tuo schremo";
+oneSignal_options['promptOptions']['exampleNotificationTitleMobile'] = "Notifica di esempio";
+oneSignal_options['promptOptions']['exampleNotificationMessageMobile'] = "Le notifiche appariranno sul tuo device";
+oneSignal_options['promptOptions']['exampleNotificationCaption'] = "(puoi disiscriverti in ogni momento)";
+oneSignal_options['promptOptions']['acceptButtonText'] = "ISCRIVITI";
+oneSignal_options['promptOptions']['cancelButtonText'] = "NO GRAZIE";
+oneSignal_options['promptOptions']['siteName'] = "https://primochef.it";
+oneSignal_options['promptOptions']['autoAcceptTitle'] = "Clicca Accetta";
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-right';
+oneSignal_options['notifyButton']['theme'] = 'default';
+oneSignal_options['notifyButton']['size'] = 'medium';
+oneSignal_options['notifyButton']['showCredit'] = true;
+oneSignal_options['notifyButton']['text'] = {};
+oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Iscriviti alle notifiche';
+oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Sei iscritto alle notifiche';
+oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Hai bloccato le notifiche';
+oneSignal_options['notifyButton']['text']['message.action.subscribed'] = 'Grazie per esserti iscritto';
+oneSignal_options['notifyButton']['text']['message.action.resubscribed'] = 'Grazie per esserti iscritto';
+oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Disiscrizione avvenuta correttamente';
+oneSignal_options['notifyButton']['text']['dialog.main.title'] = 'Gestisci notifiche';
+oneSignal_options['notifyButton']['text']['dialog.main.button.subscribe'] = 'ISCRIVITI';
+oneSignal_options['notifyButton']['text']['dialog.main.button.unsubscribe'] = 'DISISCRIVITI';
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<noscript><style>.lazyload[data-src]{display:none !important;}</style></noscript><style>.lazyload{background-image:none !important;}</style><script data-cfasync="false" type="text/javascript">var Arrive=function(d,e,w){"use strict";if(d.MutationObserver&&"undefined"!=typeof HTMLElement){var a,t,r=0,c=(a=HTMLElement.prototype.matches||HTMLElement.prototype.webkitMatchesSelector||HTMLElement.prototype.mozMatchesSelector||HTMLElement.prototype.msMatchesSelector,{matchesSelector:function(e,t){return e instanceof HTMLElement&&a.call(e,t)},addMethod:function(e,t,a){var r=e[t];e[t]=function(){return a.length==arguments.length?a.apply(this,arguments):"function"==typeof r?r.apply(this,arguments):void 0}},callCallbacks:function(e,t){t&&t.options.onceOnly&&1==t.firedElems.length&&(e=[e[0]]);for(var a,r=0;a=e[r];r++)a&&a.callback&&a.callback.call(a.elem,a.elem);t&&t.options.onceOnly&&1==t.firedElems.length&&t.me.unbindEventWithSelectorAndCallback.call(t.target,t.selector,t.callback)},checkChildNodesRecursively:function(e,t,a,r){for(var i,n=0;i=e[n];n++)a(i,t,r)&&r.push({callback:t.callback,elem:i}),0<i.childNodes.length&&c.checkChildNodesRecursively(i.childNodes,t,a,r)},mergeArrays:function(e,t){var a,r={};for(a in e)e.hasOwnProperty(a)&&(r[a]=e[a]);for(a in t)t.hasOwnProperty(a)&&(r[a]=t[a]);return r},toElementsArray:function(e){return void 0===e||"number"==typeof e.length&&e!==d||(e=[e]),e}}),u=((t=function(){this._eventsBucket=[],this._beforeAdding=null,this._beforeRemoving=null}).prototype.addEvent=function(e,t,a,r){var i={target:e,selector:t,options:a,callback:r,firedElems:[]};return this._beforeAdding&&this._beforeAdding(i),this._eventsBucket.push(i),i},t.prototype.removeEvent=function(e){for(var t,a=this._eventsBucket.length-1;t=this._eventsBucket[a];a--)if(e(t)){this._beforeRemoving&&this._beforeRemoving(t);var r=this._eventsBucket.splice(a,1);r&&r.length&&(r[0].callback=null)}},t.prototype.beforeAdding=function(e){this._beforeAdding=e},t.prototype.beforeRemoving=function(e){this._beforeRemoving=e},t),l=function(i,n){var l=new u,o=this,s={fireOnAttributesModification:!1};return l.beforeAdding(function(t){var e,a=t.target;a!==d.document&&a!==d||(a=document.getElementsByTagName("html")[0]),e=new MutationObserver(function(e){n.call(this,e,t)});var r=i(t.options);e.observe(a,r),t.observer=e,t.me=o}),l.beforeRemoving(function(e){e.observer.disconnect()}),this.bindEvent=function(e,t,a){t=c.mergeArrays(s,t);for(var r=c.toElementsArray(this),i=0;i<r.length;i++)l.addEvent(r[i],e,t,a)},this.unbindEvent=function(){var a=c.toElementsArray(this);l.removeEvent(function(e){for(var t=0;t<a.length;t++)if(this===w||e.target===a[t])return!0;return!1})},this.unbindEventWithSelectorOrCallback=function(a){var e,r=c.toElementsArray(this),i=a;e="function"==typeof a?function(e){for(var t=0;t<r.length;t++)if((this===w||e.target===r[t])&&e.callback===i)return!0;return!1}:function(e){for(var t=0;t<r.length;t++)if((this===w||e.target===r[t])&&e.selector===a)return!0;return!1},l.removeEvent(e)},this.unbindEventWithSelectorAndCallback=function(a,r){var i=c.toElementsArray(this);l.removeEvent(function(e){for(var t=0;t<i.length;t++)if((this===w||e.target===i[t])&&e.selector===a&&e.callback===r)return!0;return!1})},this},i=new function(){var s={fireOnAttributesModification:!1,onceOnly:!1,existing:!1};function n(e,t,a){return!(!c.matchesSelector(e,t.selector)||(e._id===w&&(e._id=r++),-1!=t.firedElems.indexOf(e._id))||(t.firedElems.push(e._id),0))}var d=(i=new l(function(e){var t={attributes:!1,childList:!0,subtree:!0};return e.fireOnAttributesModification&&(t.attributes=!0),t},function(e,i){e.forEach(function(e){var t=e.addedNodes,a=e.target,r=[];null!==t&&0<t.length?c.checkChildNodesRecursively(t,i,n,r):"attributes"===e.type&&n(a,i)&&r.push({callback:i.callback,elem:a}),c.callCallbacks(r,i)})})).bindEvent;return i.bindEvent=function(e,t,a){t=void 0===a?(a=t,s):c.mergeArrays(s,t);var r=c.toElementsArray(this);if(t.existing){for(var i=[],n=0;n<r.length;n++)for(var l=r[n].querySelectorAll(e),o=0;o<l.length;o++)i.push({callback:a,elem:l[o]});if(t.onceOnly&&i.length)return a.call(i[0].elem,i[0].elem);setTimeout(c.callCallbacks,1,i)}d.call(this,e,t,a)},i},o=new function(){var r={};function i(e,t){return c.matchesSelector(e,t.selector)}var n=(o=new l(function(){return{childList:!0,subtree:!0}},function(e,r){e.forEach(function(e){var t=e.removedNodes,a=[];null!==t&&0<t.length&&c.checkChildNodesRecursively(t,r,i,a),c.callCallbacks(a,r)})})).bindEvent;return o.bindEvent=function(e,t,a){t=void 0===a?(a=t,r):c.mergeArrays(r,t),n.call(this,e,t,a)},o};e&&g(e.fn),g(HTMLElement.prototype),g(NodeList.prototype),g(HTMLCollection.prototype),g(HTMLDocument.prototype),g(Window.prototype);var n={};return s(i,n,"unbindAllArrive"),s(o,n,"unbindAllLeave"),n}function s(e,t,a){c.addMethod(t,a,e.unbindEvent),c.addMethod(t,a,e.unbindEventWithSelectorOrCallback),c.addMethod(t,a,e.unbindEventWithSelectorAndCallback)}function g(e){e.arrive=i.bindEvent,s(i,e,"unbindArrive"),e.leave=o.bindEvent,s(o,e,"unbindLeave")}}(window,"undefined"==typeof jQuery?null:jQuery,void 0),ewww_webp_supported=!1;function check_webp_feature(e,t){if(ewww_webp_supported)t(ewww_webp_supported);else{var a=new Image;a.onload=function(){ewww_webp_supported=0<a.width&&0<a.height,t(ewww_webp_supported)},a.onerror=function(){t(!1)},a.src="data:image/webp;base64,"+{alpha:"UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAARBxAR/Q9ERP8DAABWUDggGAAAABQBAJ0BKgEAAQAAAP4AAA3AAP7mtQAAAA==",animation:"UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA"}[e]}}function ewwwLoadImages(e){var n="data-";function t(e,t){for(var a=["accesskey","align","alt","border","class","contenteditable","contextmenu","crossorigin","dir","draggable","dropzone","height","hidden","hspace","id","ismap","lang","longdesc","sizes","spellcheck","style","tabindex","title","translate","usemap","vspace","width","data-animation","data-attachment-id","data-auto-height","data-caption","data-comments-opened","data-delay","data-event-trigger","data-flex_fx","data-height","data-hide-on-end","data-highlight-color","data-highlight-border-color","data-highlight-border-opacity","data-highlight-border-width","data-highlight-opacity","data-image-meta","data-image-title","data-image-description","data-interval","data-large_image_width","data-large_image_height","data-lazy","data-lazy-type","data-mode","data-name","data-no-lazy","data-orig-size","data-partial","data-per-view","data-permalink","data-pin-description","data-pin-id","data-pin-media","data-pin-url","data-rel","data-ride","data-shadow","data-shadow-direction","data-slide","data-slide-to","data-target","data-vc-zoom","data-width","data-wrap"],r=0,i=a.length;r<i;r++)ewwwAttr(t,a[r],e.getAttribute(n+a[r]));return t}if(e){for(var a=document.querySelectorAll(".batch-image img, .image-wrapper a, .ngg-pro-masonry-item a, .ngg-galleria-offscreen-seo-wrapper a"),r=0,i=a.length;r<i;r++)ewwwAttr(a[r],"data-src",a[r].getAttribute("data-webp")),ewwwAttr(a[r],"data-thumbnail",a[r].getAttribute("data-webp-thumbnail"));for(r=0,i=(o=document.querySelectorAll(".rev_slider ul li")).length;r<i;r++){ewwwAttr(o[r],"data-thumb",o[r].getAttribute("data-webp-thumb"));for(var l=1;l<11;)ewwwAttr(o[r],"data-param"+l,o[r].getAttribute("data-webp-param"+l)),l++}var o;for(r=0,i=(o=document.querySelectorAll(".rev_slider img")).length;r<i;r++)ewwwAttr(o[r],"data-lazyload",o[r].getAttribute("data-webp-lazyload"));var s=document.querySelectorAll("div.woocommerce-product-gallery__image");for(r=0,i=s.length;r<i;r++)ewwwAttr(s[r],"data-thumb",s[r].getAttribute("data-webp-thumb"))}var d=document.querySelectorAll("video");for(r=0,i=d.length;r<i;r++)ewwwAttr(d[r],"poster",e?d[r].getAttribute("data-poster-webp"):d[r].getAttribute("data-poster-image"));var w=document.querySelectorAll("img.ewww_webp_lazy_load");for(r=0,i=w.length;r<i;r++){if(e){ewwwAttr(w[r],"data-lazy-srcset",w[r].getAttribute("data-lazy-srcset-webp")),ewwwAttr(w[r],"data-srcset",w[r].getAttribute("data-srcset-webp")),ewwwAttr(w[r],"data-lazy-src",w[r].getAttribute("data-lazy-src-webp")),ewwwAttr(w[r],"data-src",w[r].getAttribute("data-src-webp")),ewwwAttr(w[r],"data-orig-file",w[r].getAttribute("data-webp-orig-file")),ewwwAttr(w[r],"data-medium-file",w[r].getAttribute("data-webp-medium-file")),ewwwAttr(w[r],"data-large-file",w[r].getAttribute("data-webp-large-file"));var c=w[r].getAttribute("srcset");null!=c&&!1!==c&&c.includes("R0lGOD")&&ewwwAttr(w[r],"src",w[r].getAttribute("data-lazy-src-webp"))}w[r].className=w[r].className.replace(/\bewww_webp_lazy_load\b/,"")}var u=document.querySelectorAll(".ewww_webp");for(r=0,i=u.length;r<i;r++){var g=document.createElement("img");e?(ewwwAttr(g,"src",u[r].getAttribute("data-webp")),ewwwAttr(g,"srcset",u[r].getAttribute("data-srcset-webp")),ewwwAttr(g,"data-orig-file",u[r].getAttribute("data-orig-file")),ewwwAttr(g,"data-orig-file",u[r].getAttribute("data-webp-orig-file")),ewwwAttr(g,"data-medium-file",u[r].getAttribute("data-medium-file")),ewwwAttr(g,"data-medium-file",u[r].getAttribute("data-webp-medium-file")),ewwwAttr(g,"data-large-file",u[r].getAttribute("data-large-file")),ewwwAttr(g,"data-large-file",u[r].getAttribute("data-webp-large-file")),ewwwAttr(g,"data-large_image",u[r].getAttribute("data-large_image")),ewwwAttr(g,"data-large_image",u[r].getAttribute("data-webp-large_image")),ewwwAttr(g,"data-src",u[r].getAttribute("data-src")),ewwwAttr(g,"data-src",u[r].getAttribute("data-webp-src"))):(ewwwAttr(g,"src",u[r].getAttribute("data-img")),ewwwAttr(g,"srcset",u[r].getAttribute("data-srcset-img")),ewwwAttr(g,"data-orig-file",u[r].getAttribute("data-orig-file")),ewwwAttr(g,"data-medium-file",u[r].getAttribute("data-medium-file")),ewwwAttr(g,"data-large-file",u[r].getAttribute("data-large-file")),ewwwAttr(g,"data-large_image",u[r].getAttribute("data-large_image")),ewwwAttr(g,"data-src",u[r].getAttribute("data-src"))),g=t(u[r],g),u[r].parentNode.insertBefore(g,u[r].nextSibling),u[r].className=u[r].className.replace(/\bewww_webp\b/,"")}window.jQuery&&jQuery.fn.isotope&&jQuery.fn.imagesLoaded&&(jQuery(".fusion-posts-container-infinite").imagesLoaded(function(){jQuery(".fusion-posts-container-infinite").hasClass("isotope")&&jQuery(".fusion-posts-container-infinite").isotope()}),jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").imagesLoaded(function(){jQuery(".fusion-portfolio:not(.fusion-recent-works) .fusion-portfolio-wrapper").isotope()}))}function ewwwWebPInit(e){ewwwLoadImages(e),ewwwNggLoadGalleries(e),document.arrive(".ewww_webp",function(){ewwwLoadImages(e)}),document.arrive(".ewww_webp_lazy_load",function(){ewwwLoadImages(e)}),document.arrive("videos",function(){ewwwLoadImages(e)}),"loading"==document.readyState?document.addEventListener("DOMContentLoaded",ewwwJSONParserInit):("undefined"!=typeof galleries&&ewwwNggParseGalleries(e),ewwwWooParseVariations(e))}function ewwwAttr(e,t,a){null!=a&&!1!==a&&e.setAttribute(t,a)}function ewwwJSONParserInit(){"undefined"!=typeof galleries&&check_webp_feature("alpha",ewwwNggParseGalleries),check_webp_feature("alpha",ewwwWooParseVariations)}function ewwwWooParseVariations(e){if(e)for(var t=document.querySelectorAll("form.variations_form"),a=0,r=t.length;a<r;a++){var i=t[a].getAttribute("data-product_variations"),n=!1;try{for(var l in i=JSON.parse(i))void 0!==i[l]&&void 0!==i[l].image&&(void 0!==i[l].image.src_webp&&(i[l].image.src=i[l].image.src_webp,n=!0),void 0!==i[l].image.srcset_webp&&(i[l].image.srcset=i[l].image.srcset_webp,n=!0),void 0!==i[l].image.full_src_webp&&(i[l].image.full_src=i[l].image.full_src_webp,n=!0),void 0!==i[l].image.gallery_thumbnail_src_webp&&(i[l].image.gallery_thumbnail_src=i[l].image.gallery_thumbnail_src_webp,n=!0),void 0!==i[l].image.thumb_src_webp&&(i[l].image.thumb_src=i[l].image.thumb_src_webp,n=!0));n&&ewwwAttr(t[a],"data-product_variations",JSON.stringify(i))}catch(e){}}}function ewwwNggParseGalleries(e){if(e)for(var t in galleries){var a=galleries[t];galleries[t].images_list=ewwwNggParseImageList(a.images_list)}}function ewwwNggLoadGalleries(e){e&&document.addEventListener("ngg.galleria.themeadded",function(e,t){window.ngg_galleria._create_backup=window.ngg_galleria.create,window.ngg_galleria.create=function(e,t){var a=$(e).data("id");return galleries["gallery_"+a].images_list=ewwwNggParseImageList(galleries["gallery_"+a].images_list),window.ngg_galleria._create_backup(e,t)}})}function ewwwNggParseImageList(e){for(var t in e){var a=e[t];if(void 0!==a["image-webp"]&&(e[t].image=a["image-webp"],delete e[t]["image-webp"]),void 0!==a["thumb-webp"]&&(e[t].thumb=a["thumb-webp"],delete e[t]["thumb-webp"]),void 0!==a.full_image_webp&&(e[t].full_image=a.full_image_webp,delete e[t].full_image_webp),void 0!==a.srcsets)for(var r in a.srcsets)nggSrcset=a.srcsets[r],void 0!==a.srcsets[r+"-webp"]&&(e[t].srcsets[r]=a.srcsets[r+"-webp"],delete e[t].srcsets[r+"-webp"]);if(void 0!==a.full_srcsets)for(var i in a.full_srcsets)nggFSrcset=a.full_srcsets[i],void 0!==a.full_srcsets[i+"-webp"]&&(e[t].full_srcsets[i]=a.full_srcsets[i+"-webp"],delete e[t].full_srcsets[i+"-webp"])}return e}check_webp_feature("alpha",ewwwWebPInit);</script><link rel="amphtml" href="https://primochef.it/frullati-dimagranti/ricette/amp/"><link rel="icon" href="images/logo_primochef_76.png" sizes="32x32">
+<link rel="icon" href="images/logo_primochef_76.png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/logo_primochef_76.png">
+<meta name="msapplication-TileImage" content="https://primochef.it/wp-content/uploads/2020/05/logo_primochef_76.png">
+<style type="text/css">div.nsl-container[data-align="left"] {
+    text-align: left;
+}
+
+div.nsl-container[data-align="center"] {
+    text-align: center;
+}
+
+div.nsl-container[data-align="right"] {
+    text-align: right;
+}
+
+
+div.nsl-container .nsl-container-buttons a {
+    text-decoration: none !important;
+    box-shadow: none !important;
+    border: 0;
+}
+
+div.nsl-container .nsl-container-buttons {
+    display: flex;
+    padding: 5px 0;
+}
+
+div.nsl-container-block .nsl-container-buttons {
+    flex-flow: column;
+    align-items: center;
+}
+
+div.nsl-container-block .nsl-container-buttons a {
+    flex: 1 1 auto;
+    display: block;
+    margin: 5px 0;
+    max-width: 280px;
+    width: 100%;
+}
+
+div.nsl-container-inline {
+    margin: -5px;
+    text-align: left;
+}
+
+div.nsl-container-inline .nsl-container-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.nsl-container-inline .nsl-container-buttons a {
+    margin: 5px;
+    display: inline-block;
+}
+
+div.nsl-container-grid .nsl-container-buttons {
+    flex-flow: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div.nsl-container-grid .nsl-container-buttons a {
+    flex: 1 1 auto;
+    display: block;
+    margin: 5px;
+    max-width: 280px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 650px) {
+    div.nsl-container-grid .nsl-container-buttons a {
+        width: auto;
+    }
+}
+
+div.nsl-container .nsl-button {
+    cursor: pointer;
+    vertical-align: top;
+    border-radius: 4px;
+}
+
+div.nsl-container .nsl-button-default {
+    color: #fff;
+    display: flex;
+}
+
+div.nsl-container .nsl-button-icon {
+    display: inline-block;
+}
+
+div.nsl-container .nsl-button-svg-container {
+    flex: 0 0 auto;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+div.nsl-container svg {
+    height: 24px;
+    width: 24px;
+    vertical-align: top;
+}
+
+div.nsl-container .nsl-button-default div.nsl-button-label-container {
+    margin: 0 24px 0 12px;
+    padding: 10px 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .25px;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: clip;
+    white-space: nowrap;
+    flex: 1 1 auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-transform: none;
+    display: inline-block;
+}
+
+div.nsl-container .nsl-button-google[data-skin="dark"] .nsl-button-svg-container {
+    margin: 1px;
+    padding: 7px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+div.nsl-container .nsl-button-google[data-skin="light"] {
+    border-radius: 1px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .25);
+    color: RGBA(0, 0, 0, 0.54);
+}
+
+div.nsl-container .nsl-button-apple .nsl-button-svg-container {
+    padding: 0 6px;
+}
+
+div.nsl-container .nsl-button-apple .nsl-button-svg-container svg {
+    height: 40px;
+    width: auto;
+}
+
+div.nsl-container .nsl-button-apple[data-skin="light"] {
+    color: #000;
+    box-shadow: 0 0 0 1px #000;
+}
+
+div.nsl-container .nsl-button-facebook[data-skin="white"] {
+    color: #000;
+    box-shadow: inset 0 0 0 1px #000;
+}
+
+div.nsl-container .nsl-button-facebook[data-skin="light"] {
+    color: #1877F2;
+    box-shadow: inset 0 0 0 1px #1877F2;
+}
+
+div.nsl-container .nsl-button-apple div.nsl-button-label-container {
+    font-size: 17px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.nsl-clear {
+    clear: both;
+}
+
+/*Button align start*/
+div.nsl-container-block[data-align="left"] .nsl-container-buttons {
+    align-items: flex-start;
+}
+
+div.nsl-container-block[data-align="center"] .nsl-container-buttons {
+    align-items: center;
+}
+
+div.nsl-container-block[data-align="right"] .nsl-container-buttons {
+    align-items: flex-end;
+}
+
+div.nsl-container-inline[data-align="left"] .nsl-container-buttons {
+    justify-content: flex-start;
+}
+
+div.nsl-container-inline[data-align="center"] .nsl-container-buttons {
+    justify-content: center;
+}
+
+div.nsl-container-inline[data-align="right"] .nsl-container-buttons {
+    justify-content: flex-end;
+}
+
+
+div.nsl-container-grid[data-align="left"] .nsl-container-buttons {
+    justify-content: flex-start;
+}
+
+div.nsl-container-grid[data-align="center"] .nsl-container-buttons {
+    justify-content: center;
+}
+
+div.nsl-container-grid[data-align="right"] .nsl-container-buttons {
+    justify-content: flex-end;
+}
+
+div.nsl-container-grid[data-align="space-around"] .nsl-container-buttons {
+    justify-content: space-around;
+}
+
+div.nsl-container-grid[data-align="space-between"] .nsl-container-buttons {
+    justify-content: space-between;
+}
+
+/* Button align end*/</style>		<style type="text/css" id="wp-custom-css">
+			/* Fix Titolo Archivio Tag */
+.primo-chef .term_description h1 { text-transform: uppercase; }
+
+/*CMP Fix opener Privacy */
+.qc-cmp2-persistent-link{
+    position: fixed!important;
+    left: -35px!important;
+    bottom: 20%!important;
+    display: table!important;
+    transform: rotate(90deg)!important;
+    color: #fff!important;
+    font-size: 14px!important;
+    z-index: 999!important;
+    background-color: #ffa24f;
+}
+
+/* Fix Anchor Text */
+.anchor-text{
+  padding-top: 60px !important;
+  margin-top: -60px !important;
+}
+
+/* Hide Newsletter */
+.newsletter-header-cta { display: none; }
+
+/* Fix Native Taboola */
+#taboola-below-article-thumbnails-2 {
+	  display: block!important;
+    width: 100%;
+    margin: 0!important;
+}		</style>
+		
+  <!-- links for favicon
+    ======================================== -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57_c5bcbf6b.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60_21fdc50e.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72_15082e9f.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76_e29e05dd.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114_fd9d1766.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120_331cbf41.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144_62a88f32.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152_14a21038.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180_fbff63f0.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-icon-192x192_e4af63c8.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32_53e4941b.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96_1fa51a3a.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16_cee8a0f4.png">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="https://primochef.it/wp-content/themes/delta-network/dist/images/favicon/primo-chef/ms-icon-144x144_efc93667.png">
+
+  
+  
+    
+        <!-- GTM -->
+        <!-- Google Tag Manager Delta Pictures-->
+        <script>
+            window.dataLayer = window.dataLayer || [];
+        </script>
+        <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5F4S2KL');
+        </script>
+        <!-- End Google Tag Manager -->
+
+
+    
+
+ 
+  
+  <meta name="p:domain_verify" content="88f05a887f497aef6fdc2c125de0bf2e">
+
+<script async src="js/adsbygoogle.js"></script>
+<script>
+//Paused by default
+(adsbygoogle=window.adsbygoogle||[]).pauseAdRequests=1;
+</script>
+<!-- Auto AD -->
+<script>
+ //Push Auto AD
+(adsbygoogle=window.adsbygoogle||[]).push({google_ad_client: "ca-pub-1936480180175068", enable_page_level_ads: true});
+</script>
+
+
+<!-- tms Triboo Media-->
+<script>
+   var tribooAdv = [{
+      adFirstLevelPath: "primochef",
+      adSecondLevelPath: "genr"
+   }];
+</script>
+<script src="js/utag.js"></script>
+<!-- tms Triboo Media-->
+
+<!-- Taboola Script -->
+<script>
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u, i) {
+    if (!document.getElementById(i)){
+      e.async = 1;
+      e.src = u;
+      e.id = i;
+      f.parentNode.insertBefore(e, f);
+    }
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  '//cdn.taboola.com/libtrc/deltapictures-primochef/loader.js',
+  'tb_loader_script');
+  if(window.performance && typeof window.performance.mark == 'function')
+    {window.performance.mark('tbl_ic');}
+</script>
+
+<!-- Seedtag Script -->
+<script type="text/plain" class="cmp-script">
+   window._seedtagq = window._seedtagq || [];
+   window._seedtagq.push(['_setId', '1110-6608-01']);
+   (function () {
+     var st = document.createElement('script');
+     st.type = 'text/javascript';
+     st.async = true;
+     st.src = ('https:' == document.location.protocol
+       ? 'https'
+       : 'http') + '://config.seedtag.com/loader.js?v=' + Math.random();
+     var s = document.getElementsByTagName('script')[0];
+     s.parentNode.insertBefore(st, s);
+   })();
+</script>
+
+</head>
+  <body class="post-template-default single single-post postid-196786 single-format-standard pmpro-body-has-access wp-schema-pro-2.1.1 ricette primo-chef boxed premium app-data index-data singular-data single-data single-post-data single-post-frullati-dimagranti-data">
+ <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TLMZMBX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+      <script>
+        //Vars
+        window.logoutUrl =  "https://primochef.it/wp-login.php?action=logout&amp;amp;_wpnonce=9625ec6a45";
+      </script>
+
+      
+      <div class="offscreen">
+      <!-- out-of-page -->
+<div id="div-gpt-ad-oop" class="mp-code oop"></div>
+
+<!-- skin -->
+<div id="div-gpt-ad-skin" class="mp-code skin"></div>
+      </div>
+
+      <!-- Main contents
+      ================================================ -->
+      <div class="main-content">
+
+           <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="ns.html" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<div class="side-nav side-nav__left">
+  <div class="side-nav-inner nicescroll-container">
+    <form action="/" class="side-nav-search-form">
+      <div class="form-group search-field">
+        <input type="text" class="search-field" name="s" placeholder="Cerca...">
+        <button class="side-nav-search-btn" aria-label="Ricerca"><i class="fas fa-search"></i></button>
+      </div>
+      <!-- End of .side-nav-search-form -->
+    </form>
+    <!-- End of .side-nav-search-form -->
+    <div class="side-nav-content">
+      <div class="row ">
+        <div class="col-lg-6">
+                    <div class="menu-menu-principale-container"><ul id="menu-menu-principale" class="main-navigation side-navigation list-inline flex-column"><li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-14"><a href="https://primochef.it/ricette/">Ricette</a>
+<ul class="sub-menu">
+	<li id="menu-item-192472" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-192472"><a href="https://primochef.it/ricette/antipasti/">Antipasti</a></li>
+	<li id="menu-item-192470" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-192470"><a href="https://primochef.it/ricette/primi-piatti/">Primi Piatti</a></li>
+	<li id="menu-item-192471" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-192471"><a href="https://primochef.it/ricette/secondi-piatti/">Secondi Piatti</a></li>
+	<li id="menu-item-192473" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-192473"><a href="https://primochef.it/ricette/piatto-unico/">Piatto Unico</a></li>
+	<li id="menu-item-192474" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-192474"><a href="https://primochef.it/ricette/contorni/">Contorni</a></li>
+	<li id="menu-item-192469" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-192469"><a href="https://primochef.it/ricette/dolci-e-dessert/">Dolci e Dessert</a></li>
+</ul>
+</li>
+<li id="menu-item-75400" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-75400"><a href="https://primochef.it/ricette/top-ten-ricette/">Top Ten Ricette</a></li>
+<li id="menu-item-96603" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96603"><a href="https://primochef.it/prodottitipici/">Prodotti Tipici</a></li>
+<li id="menu-item-2023" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2023"><a href="https://primochef.it/cucina-naturale/">Cucina Naturale</a></li>
+<li id="menu-item-96605" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-96605"><a href="https://primochef.it/gluten-free/">Gluten Free</a></li>
+<li id="menu-item-191822" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191822"><a href="https://primochef.it/ricettario/">Ricettario</a></li>
+<li id="menu-item-189574" class="premium-btn menu-item menu-item-type-custom menu-item-object-custom menu-item-189574"><a href="https://primochef.it/conto-iscrizione/livelli/">Abbonati</a></li>
+</ul></div>
+          
+          
+                    <div class="mobile-tags-menu d-lg-none m-b-xs-15">
+            <h3>Di tendenza:</h3>
+            
+            
+                        
+                        <div class="menu-tag-header-container"><ul id="menu-tag-header" class="tags-navigation flex-column"><li id="menu-item-189638" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-189638"><a href="https://primochef.it/tag/ricette-bimby/">Ricette Bimby</a></li>
+<li id="menu-item-203822" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-203822"><a href="https://primochef.it/tag/fragole/">Fragole</a></li>
+<li id="menu-item-192500" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-192500"><a href="https://primochef.it/tag/torte/">Torte</a></li>
+<li id="menu-item-189635" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-189635"><a href="https://primochef.it/tag/pizza/">Pizza</a></li>
+<li id="menu-item-206042" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-206042"><a href="https://primochef.it/tag/primi-piatti-semplici/">Primi piatti semplici</a></li>
+<li id="menu-item-206070" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-206070"><a href="https://primochef.it/tag/idee-per-cena/">Idee per cena</a></li>
+</ul></div>
+                                    
+          </div>
+          <!--mobile-tags-menu -->
+                    
+
+        </div>
+        <!-- End of  .col-md-6 -->
+        <div class="col-lg-6">
+          <div class="axil-contact-info-inner">
+            <div class="axil-contact-info">
+
+              <div class="row m-b-xs-10 newsletter-header-cta">
+                <div class="col-lg-12">
+                  <a href="https://www.deltapictures.it/lp/iscriviti-alla-newsletter/primo-chef/?utm_source=primochef&amp;utm_medium=link&amp;utm_content=nl_link_menu" target="_blank" title="Iscriviti alla newsletter" rel="noreferrer">
+                    <h4><i class="far fa-envelope"></i> Iscriviti GRATIS alla newsletter</h4>
+                  </a>
+                </div>
+              </div>
+
+              <div class="brand-menu">
+                <img src="images/placeholder-150x47.png" alt="Primo Chef" width="150" height="47" data-src="https://primochef.it/wp-content/themes/delta-network/dist/images/primochef_logo_a990c63a.png" class="lazyload"><noscript><img src="images/primochef_logo_a990c63a.png" alt="Primo Chef" width="150" height="47" data-eio="l"></noscript>
+              </div>
+
+              <!-- End of address -->
+              <div class="contact-social-share">
+                <div class="axil-social-title h5">Seguici</div>
+                <ul class="social-share social-share__with-bg">
+                  <li><a href="https://www.facebook.com/primochef.it/" target="_blank" title="Facebook" rel="noreferrer"><i class="fab fa-facebook" aria-label="Facebook"></i></a></li>
+
+   <li><a href="https://www.instagram.com/primo_chef/" target="_blank" title="Instagram" rel="noreferrer"><i class="fab fa-instagram" aria-label="Instagram"></i></a></li>
+
+
+
+
+                </ul>
+              </div>
+              <!-- End of .contact-shsdf -->
+            </div>
+            <!-- End of .axil-contact-info -->
+          </div>
+          <!-- End of .axil-contact-info-inner -->
+        </div>
+      </div>
+      <!-- End of .row -->
+    </div>
+  </div>
+  <!-- End of .side-nav-inner -->
+  <div class="close-sidenav" id="close-sidenav">
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- End of .side-nav -->
+
+<!-- Header starts -->
+<header class="page-header" id="delta-header">
+  <div class="header-top header-top__style-two bg-grey-dark-seven  header-light  ">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-md-4">
+          <ul class="header-top-nav list-inline justify-content-center justify-content-md-start">
+            <li id="network-component">
+                            <a href="https://www.deltapictures.it/#section-publisher-online" target="_blank" title="Delta Network" rel="noreferrer">
+                <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Delta Network" height="30" class="deltanet lazyload" data-src="https://primochef.it/wp-content/themes/delta-network/dist/images/dp_primochef_aa96c9ed.svg"><noscript><img src="fonts/dp_primochef_aa96c9ed.svg" alt="Delta Network" height="30" class="deltanet" data-eio="l"></noscript>Delta Network
+              </a>
+                          </li>
+          </ul>
+          <!-- End of .header-top-nav -->
+        </div>
+
+        <div class="brand-logo-container col-md-4 text-center">
+          <a href="https://primochef.it/">
+
+                        <img src="images/placeholder-161x50.png" alt="Primo Chef" class="brand-logo lazyload" width="161" height="50" data-src="https://primochef.it/wp-content/themes/delta-network/dist/images/primochef_logo_a990c63a.png"><noscript><img src="images/primochef_logo_a990c63a.png" alt="Primo Chef" class="brand-logo" width="161" height="50" data-eio="l"></noscript>
+            
+          </a>
+        </div>
+        <!-- End of .brand-logo-container -->
+
+        <div class="col-md-4">
+          <div class="ml-auto social-share header-top__social-share justify-content-end" id="auth-button">
+            <auth-button-component></auth-button-component>
+          </div>
+        </div>
+      </div>
+      <!-- End of .row -->
+    </div>
+    <!-- End of .container -->
+  </div>
+  <!-- End of .header-top -->
+
+  <div id="focus-header" class="sticky">
+    <nav class="navbar bg-grey-dark-one header-light-secondary navbar__style-four">
+      <div class="container">
+        <div class="navbar-inner justify-content-between">
+
+          <div class="navbar-toggler-wrapper">
+            <a href="#" class="side-nav-toggler" id="side-nav-toggler" aria-label="Menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- End of .navbar-toggler-wrapper -->
+
+          <div class="brand-logo-container text-center d-lg-none">
+
+            <a href="https://primochef.it/">
+              <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Primo Chef" class="brand-logo lazyload" data-src="https://primochef.it/wp-content/themes/delta-network/dist/images/primochef_white_149d83cd.png"><noscript><img src="images/primochef_white_149d83cd.png" alt="Primo Chef" class="brand-logo" data-eio="l"></noscript>
+            </a>
+
+          </div>
+          <!-- End of .brand-logo-container -->
+          <div class="main-nav-wrapper">
+
+              
+                                          <div class="header-focus-single main-navigation">
+                <span>LEGGI ANCHE: </span>
+                                <a href="https://primochef.it/carbonara-bimby/ricette/" title="Carbonara con Bimby: la ricetta di cui non potrete più fare a meno"> Carbonara con Bimby: la ricetta di cui non potrete più fare a meno </a>
+                              </div>
+                            
+
+          </div>
+          <!-- End of .main-nav-wrapper -->
+
+          <div class="main-nav-toggler  d-lg-none" id="main-nav-toggler">
+            <div class="toggler-inner" style="text-align: center">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End of .main-nav-toggler -->
+
+          <div class="navbar-extra-features" id="header-helper">
+            <header-helper-component></header-helper-component>
+          </div>
+          <!-- End of .navbar-extra-features -->
+
+
+        </div>
+        <!-- End of .navbar-inner -->
+      </div>
+      <!-- End of .container -->
+    </nav>
+  </div><!-- sticky-->
+  <!-- End of .navbar -->
+
+  <!-- scrollmenu Mobile-->
+  <div class="scrollmenu">
+    
+        
+        <div class="menu-tag-header-container"><ul id="menu-tag-header-1" class="tags-navigation-mobile"><li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-189638"><a href="https://primochef.it/tag/ricette-bimby/">Ricette Bimby</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-203822"><a href="https://primochef.it/tag/fragole/">Fragole</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-192500"><a href="https://primochef.it/tag/torte/">Torte</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-189635"><a href="https://primochef.it/tag/pizza/">Pizza</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-206042"><a href="https://primochef.it/tag/primi-piatti-semplici/">Primi piatti semplici</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-206070"><a href="https://primochef.it/tag/idee-per-cena/">Idee per cena</a></li>
+</ul></div>
+            
+  </div><!-- scrollmenu Mobile-->
+
+</header>
+<!-- End of .page-header -->
+
+
+<div class="adv" id="masthead">
+  <!-- masthead -->
+<div id="div-gpt-ad-headofpage" class="mp-code headofpage"></div>
+</div>
+
+
+           <div class="content">
+             
+  <div class="breadcrumb-wrapper">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <div class="breadcrumb"><span><span><a href="https://primochef.it/">Home</a> » <span><a href="https://primochef.it/ricette/">Ricette</a> » <span class="breadcrumb_last" aria-current="page">Frullati dimagranti: ottimi per perdere peso e fare il pieno&hellip;</span></span></span></span></div>      <!-- End of .breadcrumb -->
+      </nav>
+    </div>
+    <!-- End of .container -->
+  </div>
+  <!-- End of .breadcrumb-container -->
+
+
+      <!-- Banner starts -->
+<section class="banner banner__single-post banner__standard">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="post-title-wrapper">
+          <div class="btn-group">
+            <a href="https://primochef.it/ricette/" class="post-cat cat-btn site-main-color-bg"> Ricette </a>
+
+          </div>
+          <h1 class="m-b-xs-0 axil-post-title hover-line"> Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine </h1>
+          <div class="post-metas banner-post-metas m-t-xs-30">
+            <ul class="list-inline">
+              <li>
+                <a class="post-author" href="https://primochef.it/author/beatrice-piselli/">
+                Beatrice Piselli
+                </a>
+              </li>
+              <li> - <time class="updated" datetime="2020-12-28T07:29:00+00:00">28 Dicembre 2020</time>
+ </li>
+            </ul>
+          </div>
+          <!-- End of .post-metas -->
+        </div>
+        <!-- End of .post-title-wrapper -->
+      </div>
+      <!-- End of .col-lg-6 -->
+      <div class="col-lg-6">
+        <img src="images/placeholder-640x350.png" alt="Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine" class="img-fluid lazyload ewww_webp_lazy_load" data-src="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-640x350.jpg" data-src-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-640x350.jpg.webp"><noscript><img src="images/SH_frullato_ai_frutti_di_bosco-640x350.jpg" alt="Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine" class="img-fluid" data-eio="l"></noscript>
+      </div>
+    </div>
+    <!-- End of .row -->
+  </div>
+  <!-- End of .container -->
+</section>
+<!-- End of .banner -->
+  
+  <!-- post-single-wrapper starts -->
+  <div class="post-single-wrapper p-t-xs-20">
+    <div class="container">
+      <div class="row">
+        <div class=" col-lg-8 ">
+          <main class="site-main">
+
+            <article class="post-details">
+              <div class="single-blog-wrapper">
+
+                                   <article class="post-details">
+  <div class="single-blog-wrapper">
+
+        <div class=" mt-2 mb-2">
+      <ul class="social-share social-share__with-bg">
+        <li>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://primochef.it/frullati-dimagranti/ricette/" title="Condividi su Facebook" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </li>
+  <li>
+    <a href="whatsapp://send?text=https://primochef.it/frullati-dimagranti/ricette/" title="Condividi su Whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.pinterest.com/pin/create/button/?url=https://primochef.it/frullati-dimagranti/ricette/&media=https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-800x600.jpg&description=Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine" title="Condividi su Pinterest" target="_blank">
+      <i class="fab fa-pinterest"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:void(0);" title="Stampa" class="print-trigger">
+      <i class="fas fa-print"></i>
+    </a>
+  </li>
+      <li>
+    <a href="javascript:void(0);" title="Aggiungi ai Favoriti" class="ricettario-trigger">
+      <i class="fas fa-heart"></i> Ricettario
+    </a>
+  </li>
+        </ul>
+      <!-- End of .social-share__no-bg -->
+    </div>
+    <!-- End of .social-share -->
+    
+    
+          <!-- blocco info ricetta -->
+<div id="info-box">
+
+	<!-- ingredienti -->
+	<div id="ingredienti-box"><span id="titolo-ingredienti">Ingredienti:</span><br>&bull; 1 mela verde<br>&bull; 1 pompelmo giallo<br>&bull; 1 pompelmo rosa<br>&bull; 100 ml di acqua</div>	<!-- ingredienti -->
+	<!-- cotture -->
+	<div id="cotture-box">
+	    <i class="fas fa-tachometer-alt"></i>  difficolt&agrave;: <span class="meta-info">facile</span><br>        <i class="fas fa-users"></i>  persone: <span class="meta-info">2</span><br>        <i class="fas fa-mortar-pestle"></i>  preparazione: <span class="meta-info">10 min</span><br>        <i class="fas fa-fire"></i>  cottura: <span class="meta-info">00 min</span><br>        	</div>
+	<!-- cotture -->
+</div>
+<!-- blocco info ricetta -->    
+    <div class="entry-content" id="deltapictures-content">
+      <div class="code-block code-block-1" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+</div>
+
+<div class="code-block code-block-14" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<script>
+   var LEOADVCTXNATVID_extVideoURL = "https://deltapictures.it/LOOP_v2/primochef_loop_site.mp4";
+   var LEOADVCTXNATVID_extVideoDistributor = "deltapictures";
+</script>
+<div id="div-gpt-ad-video_content" class="mp-code video_content"></div></div>
+<h2>Perdere qualche chilo di troppo è semplice con l&#8217;aiuto dei frullati dimagranti. Ecco quali sono i più efficaci che abbiamo provato per voi.</h2>
+
+
+
+<div class="code-block code-block-5" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+</div>
+<p>Quando ci si sente addosso qualche chilo di troppo e comincia a ronzarci in testa il pensiero di iniziare una <strong>dieta</strong> solitamente si piomba nello sconforto. Chi ha voglia del resto di subire questo genere di stress dopo che quotidianamente si è costretti ad affrontare sfide e problemi? Per questo oggi vogliamo proporvi dei frullati dimagranti, preparati con <strong>frutta e verdure fresche. </strong></p><div class="code-block code-block-15" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<div id="div-gpt-ad-box_mobile_inside_top" class="mp-code box-mobile-inside-top"></div></div>
+
+
+
+
+<p>Spesso infatti in una dieta si tende ad assumere pochi ortaggi e frutta e inserirli nella propria alimentazione sotto forma di frullati potrebbe essere una giusta soluzione. Certo, non pensate che i frullati dimagranti facciano miracoli, vanno sempre inseriti in una <strong>dieta varia ed equilibrata</strong>, tuttavia è possibile sfruttare le proprietà di alcuni ingredienti a proprio favore. </p><div class="code-block code-block-2" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+</div>
+
+
+
+
+<h3>Frullati dimagranti: 5 ricette provate per voi</h3>
+
+
+
+<p>Per utilizzare i frullati di frutta per dimagrire è utile conoscere quali sono gli ortaggi e i frutti che meglio possono assistervi. È vero infatti che si possono considerare i frullati di frutta dietetici, ma è anche vero che contengono <strong>zuccheri</strong>. Non sarà quindi corretto da un punto di vista nutrizionale rimpiazzarli <em>in toto</em> a un pasto, ma piuttosto possono essere sfruttati per <strong>calmare la fame improvvisa</strong> tra uno e l&#8217;altro. </p>
+
+
+
+<p>I frullati poi, a differenza di estratti e centrifugati, contengono molte più <strong>fibre</strong>, utili per regolare il <strong>transito intestinale</strong>. Di contro le proprietà degli ingredienti tendono a modificarsi a causa dell&#8217;azione delle lame che inglobano <strong>aria</strong> e <strong>ossidano</strong> la frutta con il calore sviluppato. Per questo motivo vi consigliamo di consumare i frullati di frutta appena fatti. </p>
+
+
+
+<h4>1. Frullato mele e pompelmo</h4>
+
+
+
+<figure class="wp-block-image size-large"><img width="1200" height="800" src="images/placeholder-1200x800.png" alt="Mela e pompelmo" class="wp-image-196875 lazyload ewww_webp_lazy_load" data-src="https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo.jpg" data-srcset="https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo.jpg 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo-300x200.jpg 300w, https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo-768x512.jpg 768w" data-sizes="auto" data-src-webp="https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo.jpg.webp" data-srcset-webp="https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo.jpg.webp 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo-300x200.jpg.webp 300w, https://primochef.it/wp-content/uploads/2020/12/SH_mela_e_pompelmo-768x512.jpg.webp 768w"><noscript><img width="1200" height="800" src="images/SH_mela_e_pompelmo.jpg" alt="Mela e pompelmo" class="wp-image-196875" srcset="images/SH_mela_e_pompelmo.jpg 1200w, images/SH_mela_e_pompelmo-300x200.jpg 300w, images/SH_mela_e_pompelmo-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" data-eio="l"></noscript><figcaption>Mela e pompelmo</figcaption></figure><div class="code-block code-block-12" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<div id="div-gpt-ad-teads"></div></div>
+
+
+
+
+<p>Questo frullato a base di mela verde e pompelmo ha un <strong>basso apporto calorico</strong> ed è perfetto anche per reintegrare i sali minerali persi durante un&#8217;attività sportiva. Per prepararne due bicchieri vi occorrono:</p>
+
+
+
+<ul><li>1 mela verde</li><li>1 pompelmo giallo</li><li>1 pompelmo rosa</li><li>100 ml di acqua</li></ul>
+
+
+
+<p>Trasferite tutti gli ingredienti in un frullatore a boccale fino a che non avrete ottenuto una bevanda fluida e uniforme. Questo frullato dimagrante sfrutta la <strong>proprietà saziante del pompelmo</strong>, evitando quindi attacchi improvvisi di fame. </p>
+
+
+
+<h4>2. Frullato spinaci e cetriolo</h4>
+
+
+
+<figure class="wp-block-image size-large"><img width="1200" height="800" src="images/placeholder-1200x800.png" alt="Frullato spinaci e cetriolo" class="wp-image-196876 lazyload ewww_webp_lazy_load" data-src="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo.jpg" data-srcset="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo.jpg 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo-300x200.jpg 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo-768x512.jpg 768w" data-sizes="auto" data-src-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo.jpg.webp" data-srcset-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo.jpg.webp 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo-300x200.jpg.webp 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_spinaci_cetriolo-768x512.jpg.webp 768w"><noscript><img width="1200" height="800" src="images/SH_frullato_spinaci_cetriolo.jpg" alt="Frullato spinaci e cetriolo" class="wp-image-196876" srcset="images/SH_frullato_spinaci_cetriolo.jpg 1200w, images/SH_frullato_spinaci_cetriolo-300x200.jpg 300w, images/SH_frullato_spinaci_cetriolo-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" data-eio="l"></noscript><figcaption>Frullato spinaci e cetriolo</figcaption></figure>
+
+
+
+<p>L&#8217;idea di utilizzare gli spinaci all&#8217;interno di un frullato può sembrare strana, ma permette di sfruttarne appieno il contenuto di <strong>tilacoidi</strong>, una sostanza che favorisce il <strong>senso di sazietà</strong> e riduce l&#8217;assorbimento di carboidrati e grassi. Insieme al <strong>cetriolo</strong>, noto per il suo potere <strong>diuretico</strong>, otterrete uno dei frullati detox per dimagrire più efficaci in assoluto. Per un bicchiere vi occorrono:</p>
+
+
+
+<ul><li>6 foglie di spinaci</li><li>1/2 cetriolo</li><li>2 coste di sedano</li><li>1 rametto di prezzemolo</li><li>200 ml di acqua</li></ul>
+
+
+
+<p>Trasferite tutti gli ingredienti nel frullatore e azionatelo fino a che non avrete ottenuto una bevanda omogenea. <strong>Evitate di filtrarla</strong> prima di berla, così da assumere tutte le fibre contenute.</p>
+
+
+
+<h4>3. Frullato di carota, spinaci e barbabietola</h4>
+
+
+
+<figure class="wp-block-image size-large"><img width="1200" height="800" src="images/placeholder-1200x800.png" alt="Frullato carota, spinaci e barbabietola" class="wp-image-196877 lazyload ewww_webp_lazy_load" data-src="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci.jpg" data-srcset="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci.jpg 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci-300x200.jpg 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci-768x512.jpg 768w" data-sizes="auto" data-src-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci.jpg.webp" data-srcset-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci.jpg.webp 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci-300x200.jpg.webp 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_carota_spinaci-768x512.jpg.webp 768w"><noscript><img width="1200" height="800" src="images/SH_frullato_carota_spinaci.jpg" alt="Frullato carota, spinaci e barbabietola" class="wp-image-196877" srcset="images/SH_frullato_carota_spinaci.jpg 1200w, images/SH_frullato_carota_spinaci-300x200.jpg 300w, images/SH_frullato_carota_spinaci-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" data-eio="l"></noscript><figcaption>Frullato carota, spinaci e barbabietola</figcaption></figure>
+
+
+
+<p>Alcuni studi evidenziano come gli antociani presenti nelle carote aiutino a <strong>combattere l&#8217;obesità</strong>. Questa proprietà va ad aggiungersi alla già nota funzione <strong>diuretica</strong> che, sommata alle proprietà degli spinaci appena viste fanno del frullato carota e spinaci un valido alleato per la <strong>perdita di peso</strong>. Per due bicchieri vi occorrono:</p>
+
+
+
+<ul><li>2 carote</li><li>1 mela</li><li>1/2 barbabietola</li><li>250 ml di acqua</li></ul>
+
+
+
+<p>Anche in questo caso è sufficiente frullare tutti gli ingredienti fino a ottenere un composto fluido e omogeneo. Si consiglia di assumere questo frullato a <strong>digiuno</strong> e a metà pomeriggio. </p>
+
+
+
+<h4>4. Frullato di mela verde, limone e zenzero</h4>
+
+
+
+<figure class="wp-block-image size-large"><img width="1200" height="800" src="images/placeholder-1200x800.png" alt="Frullato mela, limone e zenzero" class="wp-image-196878 lazyload ewww_webp_lazy_load" data-src="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero.jpg" data-srcset="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero.jpg 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero-300x200.jpg 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero-768x512.jpg 768w" data-sizes="auto" data-src-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero.jpg.webp" data-srcset-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero.jpg.webp 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero-300x200.jpg.webp 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_mela_limone_zenzero-768x512.jpg.webp 768w"><noscript><img width="1200" height="800" src="images/SH_frullato_mela_limone_zenzero.jpg" alt="Frullato mela, limone e zenzero" class="wp-image-196878" srcset="images/SH_frullato_mela_limone_zenzero.jpg 1200w, images/SH_frullato_mela_limone_zenzero-300x200.jpg 300w, images/SH_frullato_mela_limone_zenzero-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" data-eio="l"></noscript><figcaption>Frullato mela, limone e zenzero</figcaption></figure>
+
+
+
+<p>Da qualche anno a questa parte non si fa che osannare lo zenzero per le sue <strong>proprietà dimagranti</strong>. Accelerando il metabolismo infatti aiuta a bruciare i grassi e aiuta nella digestione di proteine e carboidrati; quindi perché non inserirlo in un frullato dimagrante? Per un bicchiere vi occorrono:</p>
+
+
+
+<ul><li>1 mela verde</li><li>1 limone</li><li>1 dito di zenzero fresco</li><li>100 ml di acqua</li></ul>
+
+
+
+<p>Frullate tutti gli ingredienti in un frullatore a boccale quindi trasferiteli in un bicchiere. Aggiungete un cucchiaino di zenzero grattugiato fresco e consumate subito. </p>
+
+
+
+<h4>5. Frullato di frutti di bosco e pera</h4>
+
+
+
+<figure class="wp-block-image size-large"><img width="1200" height="800" src="images/placeholder-1200x800.png" alt="Frullato frutti di bosco e pera" class="wp-image-196879 lazyload ewww_webp_lazy_load" data-src="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco.jpg" data-srcset="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco.jpg 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-300x200.jpg 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-768x512.jpg 768w" data-sizes="auto" data-src-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco.jpg.webp" data-srcset-webp="https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco.jpg.webp 1200w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-300x200.jpg.webp 300w, https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-768x512.jpg.webp 768w"><noscript><img width="1200" height="800" src="images/SH_frullato_ai_frutti_di_bosco.jpg" alt="Frullato frutti di bosco e pera" class="wp-image-196879" srcset="images/SH_frullato_ai_frutti_di_bosco.jpg 1200w, images/SH_frullato_ai_frutti_di_bosco-300x200.jpg 300w, images/SH_frullato_ai_frutti_di_bosco-768x512.jpg 768w" sizes="(max-width: 1200px) 100vw, 1200px" data-eio="l"></noscript><figcaption>Frullato frutti di bosco e pera</figcaption></figure>
+
+
+
+<p>I frutti di bosco forniscono un <strong>basso apporto calorico</strong>, sono ricchi di sostanze nutritive e possono aiutare nel processo di dimagrimento grazie alla loro azione brucia grassi. Per preparare un bicchiere di frullato dimagrante vi occorrono:</p>
+
+
+
+<ul><li>300 g di frutti di bosco</li><li>1 pera</li><li>100 ml di acqua </li></ul>
+
+
+
+<p>Trasferite tutti gli ingredienti in un frullatore e azionatelo fino a ottenere una bevanda liscia. Consumatela subito. </p>
+
+
+
+<p>I frullati dimagranti andrebbero preparati e consumati al momento. Inoltre, dato che molte delle proprietà sono contenute nella buccia, vi consigliamo di <strong>scegliere prodotti biologici </strong>così da poterli utilizzare nella loro interezza. </p>
+
+
+
+<p>Se decidete di <strong>scrollarvi di dosso qualche chilo di troppo</strong>, provate anche tutte le nostre <a href="https://primochef.it/ricette-light/ricette/" target="_blank" rel="noreferrer noopener">ricette light</a> e la <a href="https://primochef.it/dieta-dei-frullati/lifestyle/" target="_blank" rel="noreferrer noopener">dieta dei frullati</a>!</p>
+<div class="code-block code-block-3" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+</div>
+<div class="code-block code-block-4" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+</div>
+<div class="code-block code-block-13" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+<div id="div-gpt-ad-native"></div></div>
+<!-- AI CONTENT END 1 -->
+    </div>
+
+     
+              
+  </div>
+</article>
+<!-- End of .post-details -->
+
+
+
+
+
+
+                
+              </div>
+              <!-- End of .single-blog-wrapper -->
+            </article>
+            <!-- End of .post-details -->
+
+                          <div class="m-t-xs-30">
+                <ul class="social-share social-share__with-bg social-share-bottom">
+                  <li>
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://primochef.it/frullati-dimagranti/ricette/" title="Condividi su Facebook" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </li>
+  <li>
+    <a href="whatsapp://send?text=https://primochef.it/frullati-dimagranti/ricette/" title="Condividi su Whatsapp" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </li>
+  <li>
+    <a href="https://www.pinterest.com/pin/create/button/?url=https://primochef.it/frullati-dimagranti/ricette/&media=https://primochef.it/wp-content/uploads/2020/12/SH_frullato_ai_frutti_di_bosco-800x600.jpg&description=Frullati dimagranti: ottimi per perdere peso e fare il pieno di vitamine" title="Condividi su Pinterest" target="_blank">
+      <i class="fab fa-pinterest"></i>
+    </a>
+  </li>
+  <li>
+    <a href="javascript:void(0);" title="Stampa" class="print-trigger">
+      <i class="fas fa-print"></i>
+    </a>
+  </li>
+      <li>
+    <a href="javascript:void(0);" title="Aggiungi ai Favoriti" class="ricettario-trigger">
+      <i class="fas fa-heart"></i> Ricettario
+    </a>
+  </li>
+                  </ul>
+              </div>
+            
+            <hr class="m-t-xs-30 m-b-xs-30">
+
+            
+            
+            <div class="adv m-t-xs-15 m-b-xs-15">
+            
+            </div>
+
+
+            
+
+                          <div class="post-navigation-wrapper row  m-b-xs-15">
+  
+    <div class="post-navigation col-lg-6 align-self-center">
+    <div class="post-nav-content">
+      <a href=" https://primochef.it/carbonara-bimby/ricette/ " class="prev-post">
+        <span class="post-navigation-arrow"><i class="fas fa-angle-left"></i> </span> Precedente
+      </a>
+      <h3>
+        <a href=" https://primochef.it/carbonara-bimby/ricette/">
+          Carbonara con Bimby: la ricetta di cui non potrete più fare a meno
+        </a>
+      </h3>
+    </div>
+  </div>
+  
+    <div class="post-navigation text-right col-lg-6 align-self-center">
+    <div class="post-nav-content">
+      <a href=" https://primochef.it/pizza-di-pane/ricette/ " class="next-post">
+      Successivo  <span class="post-navigation-arrow"><i class="fas fa-angle-right"></i></span>
+      </a>
+      <h3>
+        <a href=" https://primochef.it/pizza-di-pane/ricette/">
+          Riciclare il pane raffermo? Ecco la pizza di pane velocissima
+        </a>
+      </h3>
+    </div>
+  </div>
+  </div>
+<!-- End of .post-navigation -->
+            
+            
+            <div class="adv m-t-xs-15 m-b-xs-15">
+            <!-- Taboola Widget -->
+<div id="taboola-below-article-thumbnails-2"></div>
+<script>
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-a',
+    container: 'taboola-below-article-thumbnails-2',
+    placement: 'Below Article Thumbnails 2',
+    target_type: 'mix'
+  });
+</script>
+            </div>
+
+          </main>
+          <!-- End of main -->
+        </div>
+        <!--End of .col-auto  -->
+                <div class="col-lg-4">
+
+        <aside class="post-sidebar" id="sidebar">
+      <section class="widget_text widget custom_html-5 widget_custom_html"><div class="textwidget custom-html-widget"><div class="adv">
+<div id="div-gpt-ad-box_desktop_side_top" class="mp-code box-desktop-side-top"></div>
+</div></div></section>
+        <div class="post-widget sidebar-post-widget m-b-xs-40">
+            <ul class="nav nav-pills row no-gutters">
+                <li class="nav-item col">
+                    <a class="nav-link active" data-toggle="pill" href="#recent-post">Leggi anche</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="recent-post">
+                    <div class="axil-content">
+
+                    
+                                <div class="media post-block post-block__small">
+                                    <a href="https://primochef.it/cheesecake-vegana-mirtilli-senza-cottura/cucina-naturale/" class="align-self-center">
+                                        <img class="m-r-xs-30 lazyload ewww_webp_lazy_load" src="images/placeholder-100x100.png" alt="Cheesecake vegana ai mirtilli: una ricetta senza cottura sorprendente" width="100" height="100" data-src="https://primochef.it/wp-content/uploads/2021/04/SH_cheesecake_veg_mirtilli-100x100.jpg" data-src-webp="https://primochef.it/wp-content/uploads/2021/04/SH_cheesecake_veg_mirtilli-100x100.jpg.webp"><noscript><img class=" m-r-xs-30" src="images/SH_cheesecake_veg_mirtilli-100x100.jpg" alt="Cheesecake vegana ai mirtilli: una ricetta senza cottura sorprendente" width="100" height="100" data-eio="l"></noscript>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="post-cat-group">
+                                                                                        <a href="https://primochef.it/cucina-naturale/" class="post-cat cat-btn site-main-color-bg">
+                                                Cucina Naturale                                            </a>
+
+                                                                                   </div>
+                                        <h4 class="axil-post-title hover-line hover-line">
+                                            <a href="https://primochef.it/cheesecake-vegana-mirtilli-senza-cottura/cucina-naturale/" title="Cheesecake vegana ai mirtilli: una ricetta senza cottura sorprendente">
+                                                Cheesecake vegana ai mirtilli: una ricetta senza cottura sorprendente                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- End of .post-block -->
+
+                                
+                                <div class="media post-block post-block__small">
+                                    <a href="https://primochef.it/orata-alla-griglia/ricette/" class="align-self-center">
+                                        <img class="m-r-xs-30 lazyload ewww_webp_lazy_load" src="images/placeholder-100x100.png" alt="Grigliata di pesce? Perché non provare l&#8217;orata alla griglia!" width="100" height="100" data-src="https://primochef.it/wp-content/uploads/2021/04/SH_orata_alla_griglia-100x100.jpg" data-src-webp="https://primochef.it/wp-content/uploads/2021/04/SH_orata_alla_griglia-100x100.jpg.webp"><noscript><img class=" m-r-xs-30" src="images/SH_orata_alla_griglia-100x100.jpg" alt="Grigliata di pesce? Perché non provare l&#8217;orata alla griglia!" width="100" height="100" data-eio="l"></noscript>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="post-cat-group">
+                                                                                        <a href="https://primochef.it/ricette/" class="post-cat cat-btn site-main-color-bg">
+                                                Ricette                                            </a>
+
+                                                                                   </div>
+                                        <h4 class="axil-post-title hover-line hover-line">
+                                            <a href="https://primochef.it/orata-alla-griglia/ricette/" title="Grigliata di pesce? Perché non provare l&#8217;orata alla griglia!">
+                                                Grigliata di pesce? Perché non provare l&#8217;orata alla griglia!                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- End of .post-block -->
+
+                                
+                                <div class="media post-block post-block__small">
+                                    <a href="https://primochef.it/melanzane-grigliate-sott-olio/ricette/" class="align-self-center">
+                                        <img class="m-r-xs-30 lazyload ewww_webp_lazy_load" src="images/placeholder-100x100.png" alt="Melanzane grigliate sott&#8217;olio: la ricetta della conserva estiva" width="100" height="100" data-src="https://primochef.it/wp-content/uploads/2021/04/SH_melanzane_grigliate_sott_olio-100x100.jpg" data-src-webp="https://primochef.it/wp-content/uploads/2021/04/SH_melanzane_grigliate_sott_olio-100x100.jpg.webp"><noscript><img class=" m-r-xs-30" src="images/SH_melanzane_grigliate_sott_olio-100x100.jpg" alt="Melanzane grigliate sott&#8217;olio: la ricetta della conserva estiva" width="100" height="100" data-eio="l"></noscript>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="post-cat-group">
+                                                                                        <a href="https://primochef.it/ricette/" class="post-cat cat-btn site-main-color-bg">
+                                                Ricette                                            </a>
+
+                                                                                   </div>
+                                        <h4 class="axil-post-title hover-line hover-line">
+                                            <a href="https://primochef.it/melanzane-grigliate-sott-olio/ricette/" title="Melanzane grigliate sott&#8217;olio: la ricetta della conserva estiva">
+                                                Melanzane grigliate sott&#8217;olio: la ricetta della conserva estiva                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- End of .post-block -->
+
+                                
+                                <div class="media post-block post-block__small">
+                                    <a href="https://primochef.it/sugo-con-melanzane/ricette/" class="align-self-center">
+                                        <img class="m-r-xs-30 lazyload ewww_webp_lazy_load" src="images/placeholder-100x100.png" alt="Sugo con le melanzane: perfetto per condire la pasta (ma anche da mangiare sul pane)" width="100" height="100" data-src="https://primochef.it/wp-content/uploads/2021/04/SH_sugo_di_melanzane-100x100.jpg" data-src-webp="https://primochef.it/wp-content/uploads/2021/04/SH_sugo_di_melanzane-100x100.jpg.webp"><noscript><img class=" m-r-xs-30" src="images/SH_sugo_di_melanzane-100x100.jpg" alt="Sugo con le melanzane: perfetto per condire la pasta (ma anche da mangiare sul pane)" width="100" height="100" data-eio="l"></noscript>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="post-cat-group">
+                                                                                        <a href="https://primochef.it/ricette/primi-piatti/" class="post-cat cat-btn site-main-color-bg">
+                                                Primi Piatti                                            </a>
+
+                                                                                   </div>
+                                        <h4 class="axil-post-title hover-line hover-line">
+                                            <a href="https://primochef.it/sugo-con-melanzane/ricette/" title="Sugo con le melanzane: perfetto per condire la pasta (ma anche da mangiare sul pane)">
+                                                Sugo con le melanzane: perfetto per condire la pasta (ma anche da mangiare sul pane)                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- End of .post-block -->
+
+                                
+                                <div class="media post-block post-block__small">
+                                    <a href="https://primochef.it/mud-cake/ricette/" class="align-self-center">
+                                        <img class="m-r-xs-30 lazyload ewww_webp_lazy_load" src="images/placeholder-100x100.png" alt="Mud cake: la ricetta originale della torta di fango del Mississippi" width="100" height="100" data-src="https://primochef.it/wp-content/uploads/2021/04/SH_mud_cake-100x100.jpg" data-src-webp="https://primochef.it/wp-content/uploads/2021/04/SH_mud_cake-100x100.jpg.webp"><noscript><img class=" m-r-xs-30" src="images/SH_mud_cake-100x100.jpg" alt="Mud cake: la ricetta originale della torta di fango del Mississippi" width="100" height="100" data-eio="l"></noscript>
+                                    </a>
+                                    <div class="media-body">
+                                        <div class="post-cat-group">
+                                                                                        <a href="https://primochef.it/ricette/dolci-e-dessert/" class="post-cat cat-btn site-main-color-bg">
+                                                Dolci e Dessert                                            </a>
+
+                                                                                   </div>
+                                        <h4 class="axil-post-title hover-line hover-line">
+                                            <a href="https://primochef.it/mud-cake/ricette/" title="Mud cake: la ricetta originale della torta di fango del Mississippi">
+                                                Mud cake: la ricetta originale della torta di fango del Mississippi                                            </a>
+                                        </h4>
+                                    </div>
+                                </div>
+                                <!-- End of .post-block -->
+
+                                
+                    </div>
+                    <!-- End of .content -->
+                </div>
+
+            </div>
+            <!-- End of .tab-content -->
+        </div>
+        <!-- End of .sidebar-post-widget -->
+
+    <section class="widget_text widget custom_html-7 widget_custom_html"><div class="textwidget custom-html-widget"><div id="div-gpt-ad-box_desktop_side_bottom_xl" class="mp-code box_desktop_side_bottom_xl"></div></div></section><section class="widget_text widget custom_html-11 widget_custom_html"><div class="textwidget custom-html-widget"><div class="adv">
+<div id="div-gpt-ad-box_desktop_side_bottom_2" class="mp-code box_desktop_side_bottom"></div>
+</div></div></section>  </aside>
+
+<aside class="post-sidebar" id="sidebar-loop">
+<!--<div class="post-widget sidebar-post-widget m-b-xs-40">
+ <div id="fakeholderMastheadVideo">
+   <div class="masthead-holder">
+     <h4 class="loopTitle" id="loopTitle"> <i class="fas fa-play"></i> </h4>
+     <div id="masthead-video">
+       <div id="dpPlayer"></div>
+     </div>
+   </div>
+ </div>
+</div>-->
+</aside>
+
+        <!-- End of .post-sidebar -->
+        </div>
+        <!-- End of .col-lg-4 -->
+              </div>
+      <!-- End of .row -->
+    </div>
+    <!-- End of .container -->
+  </div>
+  <!-- End of .post-single-wrapper -->
+
+
+           </div>
+
+      </div><!--main content -->
+
+      <!-- footer starts -->
+<footer class="page-footer bg-grey-dark-key  footer-black  ">
+  <div class="container">
+
+    <div class="footer-mid">
+      <div class="row align-items-center">
+        <div class="col-md">
+          <div class="footer-logo-container">
+            <a href="https://primochef.it/">
+              <img src="images/placeholder-200x40.png" alt="footer logo" class="footer-logo lazyload" width="200" height="40" data-src="https://primochef.it/wp-content/themes/delta-network/dist/images/primochef_white_149d83cd.png"><noscript><img src="images/primochef_white_149d83cd.png" alt="footer logo" class="footer-logo" width="200" height="40" data-eio="l"></noscript>
+            </a>
+          </div>
+          <!-- End of .brand-logo-container -->
+        </div>
+        <!-- End of .col-md-6 -->
+
+        <div class="col-md-auto">
+          <div class="footer-social-share-wrapper">
+            <div class="footer-social-share">
+              <div class="axil-social-title">Seguici sui social</div>
+              <ul class="social-share social-share__with-bg">
+                <li><a href="https://www.facebook.com/primochef.it/" target="_blank" title="Facebook" rel="noreferrer"><i class="fab fa-facebook" aria-label="Facebook"></i></a></li>
+
+   <li><a href="https://www.instagram.com/primo_chef/" target="_blank" title="Instagram" rel="noreferrer"><i class="fab fa-instagram" aria-label="Instagram"></i></a></li>
+
+
+
+
+              </ul>
+            </div>
+          </div>
+          <!-- End of .footer-social-share-wrapper -->
+        </div>
+        <!-- End of .col-md-6 -->
+      </div>
+      <!-- End of .row -->
+    </div>
+    <!-- End of .footer-mid -->
+
+    <div class="footer-bottom">
+
+              <div class="menu-primo-chef-container"><ul id="menu-primo-chef" class="footer-bottom-links"><li id="menu-item-113673" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-113673"><a target="_blank" rel="nofollow" href="https://www.deltapictures.it/chisiamo/">Chi Siamo</a></li>
+<li id="menu-item-243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-243"><a href="https://primochef.it/contatti/">Contattaci</a></li>
+<li id="menu-item-118043" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118043"><a target="_blank" rel="nofollow" href="https://www.deltapictures.it/termini-e-condizioni/">Termini e Condizioni</a></li>
+<li id="menu-item-118044" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118044"><a target="_blank" rel="nofollow" href="https://www.deltapictures.it/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-118659" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-118659"><a target="_blank" rel="nofollow" href="https://www.deltapictures.it/cookie-policy/">Cookie Policy</a></li>
+<li id="menu-item-10020" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-10020"><a target="_blank" rel="nofollow" href="http://www.deltapictures.it/redazione/">Redazione</a></li>
+</ul></div>
+      
+      <p class="axil-copyright-txt">
+        © by Delta Pictures S.r.l. (Via G. Boglietti 2, 13900 Biella - PIVA: 02154000026)
+      </p>
+
+              <p class="axil-copyright-txt">
+          Supplemento della Testata Giornalistica Delta Press, Tribunale di Biella n. 579 del 07/01/2014 - ROC n° 36440
+        </p>
+      
+    </div>
+    <!-- End of .footer-bottom -->
+  </div>
+  <!-- End of .container -->
+</footer>
+<!-- End of footer -->
+
+      <div class="code-block code-block-8" style="margin: 8px auto; text-align: center; display: block; clear: both;">
+</div>
+		<!-- Memberships powered by Paid Memberships Pro v2.5.2.
+ -->
+	<script type="text/javascript" src="js/jquery.min.js" id="jquery-js"></script>
+<script type="text/javascript" src="js/theme_5d641328.js" id="delta/theme-js"></script>
+<script type="text/javascript" id="delta/main-js-extra">
+/* <![CDATA[ */
+var my_ricettario = {"ajaxurl":"https:\/\/primochef.it\/wp-admin\/admin-ajax.php","userID":"0","postID":"196786"};
+/* ]]> */
+</script>
+<script defer type="text/javascript" async="async" src="js/main_5d641328.js" id="delta/main-js"></script>
+<script type="text/javascript" src="js/wp-embed.min.js" id="wp-embed-js"></script>
+<script type="text/javascript" src="js/OneSignalSDK.js" async="async" id="remote_sdk-js"></script>
+<script type="text/javascript">(function (undefined) {var _targetWindow ="prefer-popup";
+window.NSLPopup = function (url, title, w, h) {
+    var userAgent = navigator.userAgent,
+        mobile = function () {
+            return /\b(iPhone|iP[ao]d)/.test(userAgent) ||
+                /\b(iP[ao]d)/.test(userAgent) ||
+                /Android/i.test(userAgent) ||
+                /Mobile/i.test(userAgent);
+        },
+        screenX = window.screenX !== undefined ? window.screenX : window.screenLeft,
+        screenY = window.screenY !== undefined ? window.screenY : window.screenTop,
+        outerWidth = window.outerWidth !== undefined ? window.outerWidth : document.documentElement.clientWidth,
+        outerHeight = window.outerHeight !== undefined ? window.outerHeight : document.documentElement.clientHeight - 22,
+        targetWidth = mobile() ? null : w,
+        targetHeight = mobile() ? null : h,
+        V = screenX < 0 ? window.screen.width + screenX : screenX,
+        left = parseInt(V + (outerWidth - targetWidth) / 2, 10),
+        right = parseInt(screenY + (outerHeight - targetHeight) / 2.5, 10),
+        features = [];
+    if (targetWidth !== null) {
+        features.push('width=' + targetWidth);
+    }
+    if (targetHeight !== null) {
+        features.push('height=' + targetHeight);
+    }
+    features.push('left=' + left);
+    features.push('top=' + right);
+    features.push('scrollbars=1');
+
+    var newWindow = window.open(url, title, features.join(','));
+
+    if (window.focus) {
+        newWindow.focus();
+    }
+
+    return newWindow;
+};
+
+var isWebView = null;
+
+function checkWebView() {
+    if (isWebView === null) {
+        function _detectOS(ua) {
+            if (/Android/.test(ua)) {
+                return "Android";
+            } else if (/iPhone|iPad|iPod/.test(ua)) {
+                return "iOS";
+            } else if (/Windows/.test(ua)) {
+                return "Windows";
+            } else if (/Mac OS X/.test(ua)) {
+                return "Mac";
+            } else if (/CrOS/.test(ua)) {
+                return "Chrome OS";
+            } else if (/Firefox/.test(ua)) {
+                return "Firefox OS";
+            }
+            return "";
+        }
+
+        function _detectBrowser(ua) {
+            var android = /Android/.test(ua);
+
+            if (/CriOS/.test(ua)) {
+                return "Chrome for iOS";
+            } else if (/Edge/.test(ua)) {
+                return "Edge";
+            } else if (android && /Silk\//.test(ua)) {
+                return "Silk";
+            } else if (/Chrome/.test(ua)) {
+                return "Chrome";
+            } else if (/Firefox/.test(ua)) {
+                return "Firefox";
+            } else if (android) {
+                return "AOSP";
+            } else if (/MSIE|Trident/.test(ua)) {
+                return "IE";
+            } else if (/Safari\//.test(ua)) {
+                return "Safari";
+            } else if (/AppleWebKit/.test(ua)) {
+                return "WebKit";
+            }
+            return "";
+        }
+
+        function _detectBrowserVersion(ua, browser) {
+            if (browser === "Chrome for iOS") {
+                return _getVersion(ua, "CriOS/");
+            } else if (browser === "Edge") {
+                return _getVersion(ua, "Edge/");
+            } else if (browser === "Chrome") {
+                return _getVersion(ua, "Chrome/");
+            } else if (browser === "Firefox") {
+                return _getVersion(ua, "Firefox/");
+            } else if (browser === "Silk") {
+                return _getVersion(ua, "Silk/");
+            } else if (browser === "AOSP") {
+                return _getVersion(ua, "Version/");
+            } else if (browser === "IE") {
+                return /IEMobile/.test(ua) ? _getVersion(ua, "IEMobile/") :
+                    /MSIE/.test(ua) ? _getVersion(ua, "MSIE ")
+                        :
+                        _getVersion(ua, "rv:");
+            } else if (browser === "Safari") {
+                return _getVersion(ua, "Version/");
+            } else if (browser === "WebKit") {
+                return _getVersion(ua, "WebKit/");
+            }
+            return "0.0.0";
+        }
+
+        function _getVersion(ua, token) {
+            try {
+                return _normalizeSemverString(ua.split(token)[1].trim().split(/[^\w\.]/)[0]);
+            } catch (o_O) {
+            }
+            return "0.0.0";
+        }
+
+        function _normalizeSemverString(version) {
+            var ary = version.split(/[\._]/);
+            return (parseInt(ary[0], 10) || 0) + "." +
+                (parseInt(ary[1], 10) || 0) + "." +
+                (parseInt(ary[2], 10) || 0);
+        }
+
+        function _isWebView(ua, os, browser, version, options) {
+            switch (os + browser) {
+                case "iOSSafari":
+                    return false;
+                case "iOSWebKit":
+                    return _isWebView_iOS(options);
+                case "AndroidAOSP":
+                    return false;
+                case "AndroidChrome":
+                    return parseFloat(version) >= 42 ? /; wv/.test(ua) : /\d{2}\.0\.0/.test(version) ? true : _isWebView_Android(options);
+            }
+            return false;
+        }
+
+        function _isWebView_iOS(options) {
+            var document = (window["document"] || {});
+
+            if ("WEB_VIEW" in options) {
+                return options["WEB_VIEW"];
+            }
+            return !("fullscreenEnabled" in document || "webkitFullscreenEnabled" in document || false);
+        }
+
+        function _isWebView_Android(options) {
+            if ("WEB_VIEW" in options) {
+                return options["WEB_VIEW"];
+            }
+            return !("requestFileSystem" in window || "webkitRequestFileSystem" in window || false);
+        }
+
+        var options = {};
+        var nav = window.navigator || {};
+        var ua = nav.userAgent || "";
+        var os = _detectOS(ua);
+        var browser = _detectBrowser(ua);
+        var browserVersion = _detectBrowserVersion(ua, browser);
+
+        isWebView = _isWebView(ua, os, browser, browserVersion, options);
+    }
+
+    return isWebView;
+}
+
+function isAllowedWebViewForUserAgent() {
+    var nav = window.navigator || {};
+    var ua = nav.userAgent || "";
+    if (/Instagram/.test(ua)) {
+        /*Instagram WebView*/
+        return true;
+    } else if (/FBAV/.test(ua) || /FBAN/.test(ua)) {
+        /*Facebook WebView*/
+        return true;
+    }
+
+    return false;
+}
+
+window._nsl.push(function ($) {
+
+    window.nslRedirect = function (url) {
+        $('<div style="position:fixed;z-index:1000000;left:0;top:0;width:100%;height:100%;"></div>').appendTo('body');
+        window.location = url;
+    };
+
+    var targetWindow = _targetWindow || 'prefer-popup',
+        lastPopup = false;
+
+    $(document.body).on('click', 'a[data-plugin="nsl"][data-action="connect"],a[data-plugin="nsl"][data-action="link"]', function (e) {
+        if (lastPopup && !lastPopup.closed) {
+            e.preventDefault();
+            lastPopup.focus();
+        } else {
+
+            var $target = $(this),
+                href = $target.attr('href'),
+                success = false;
+            if (href.indexOf('?') !== -1) {
+                href += '&';
+            } else {
+                href += '?';
+            }
+            var redirectTo = $target.data('redirect');
+            if (redirectTo === 'current') {
+                href += 'redirect=' + encodeURIComponent(window.location.href) + '&';
+            } else if (redirectTo && redirectTo !== '') {
+                href += 'redirect=' + encodeURIComponent(redirectTo) + '&';
+            }
+
+            if (targetWindow !== 'prefer-same-window' && checkWebView()) {
+                targetWindow = 'prefer-same-window';
+            }
+
+            if (targetWindow === 'prefer-popup') {
+
+                lastPopup = NSLPopup(href + 'display=popup', 'nsl-social-connect', $target.data('popupwidth'), $target.data('popupheight'));
+                if (lastPopup) {
+                    success = true;
+                    e.preventDefault();
+                }
+            } else if (targetWindow === 'prefer-new-tab') {
+                var newTab = window.open(href + 'display=popup', '_blank');
+                if (newTab) {
+                    if (window.focus) {
+                        newTab.focus();
+                    }
+                    success = true;
+                    e.preventDefault();
+                }
+            }
+
+            if (!success) {
+                window.location = href;
+                e.preventDefault();
+            }
+        }
+    });
+
+    var googleLoginButton = $('a[data-plugin="nsl"][data-provider="google"]');
+    if (googleLoginButton.length && checkWebView() && !isAllowedWebViewForUserAgent()) {
+        googleLoginButton.remove();
+    }
+});})();</script>      
+    
+
+ 
+    <script>
+        function RedirectBoost() {
+            var locationScraper = window.location.href;
+            //Identifico presenza parametri get
+            var queryString = locationScraper ? locationScraper.split('?')[1] : window.location.search.slice(1);
+            if(queryString){
+                //se ci sono parametri get
+                var urlID = window.location.href.replace("&refresh_cp", "").replace("?refresh_cp", "").replace("&refresh_ce", "").replace("?refresh_ce", "");
+                //identifico se l'url ha già parametri get al suo interno
+                var queryStringInherit = urlID ? urlID.split('?')[1] : window.location.search.slice(1);
+                if(queryStringInherit){location.href = urlID + "&refresh_ce"; } else { location.href = urlID + "?refresh_ce"; }
+            } else {
+                //Nessun parametro get
+                location.href = window.location.href + "?refresh_ce";
+            }
+        }//RedirectBoost
+        setTimeout('RedirectBoost()',240000);
+    </script>
+
+ 
+    
+    <!-- Anti AdBlock -->
+    <script async defer>
+        var fuckAdBlock = false;
+        !function(t){var e=function(e){this._options={checkOnLoad:!1,resetOnEnd:!1,loopCheckTime:50,loopMaxNumber:5,baitClass:"pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links",baitStyle:"width: 1px !important; height: 1px !important; position: absolute !important; left: -10000px !important; top: -1000px !important;",debug:!1},this._var={version:"3.2.1",bait:null,checking:!1,loop:null,loopNumber:0,event:{detected:[],notDetected:[]}},void 0!==e&&this.setOption(e);var i=this,o=function(){setTimeout(function(){i._options.checkOnLoad===!0&&(i._options.debug===!0&&i._log("onload->eventCallback","A check loading is launched"),null===i._var.bait&&i._creatBait(),setTimeout(function(){i.check()},1))},1)};void 0!==t.addEventListener?t.addEventListener("load",o,!1):t.attachEvent("onload",o)};e.prototype._options=null,e.prototype._var=null,e.prototype._bait=null,e.prototype._log=function(t,e){console.log("[FuckAdBlock]["+t+"] "+e)},e.prototype.setOption=function(t,e){if(void 0!==e){var i=t;t={},t[i]=e}for(var o in t)this._options[o]=t[o],this._options.debug===!0&&this._log("setOption",'The option "'+o+'" he was assigned to "'+t[o]+'"');return this},e.prototype._creatBait=function(){var e=document.createElement("div");e.setAttribute("class",this._options.baitClass),e.setAttribute("style",this._options.baitStyle),this._var.bait=t.document.body.appendChild(e),this._var.bait.offsetParent,this._var.bait.offsetHeight,this._var.bait.offsetLeft,this._var.bait.offsetTop,this._var.bait.offsetWidth,this._var.bait.clientHeight,this._var.bait.clientWidth,this._options.debug===!0&&this._log("_creatBait","Bait has been created")},e.prototype._destroyBait=function(){t.document.body.removeChild(this._var.bait),this._var.bait=null,this._options.debug===!0&&this._log("_destroyBait","Bait has been removed")},e.prototype.check=function(t){if(void 0===t&&(t=!0),this._options.debug===!0&&this._log("check","An audit was requested "+(t===!0?"with a":"without")+" loop"),this._var.checking===!0)return this._options.debug===!0&&this._log("check","A check was canceled because there is already an ongoing"),!1;this._var.checking=!0,null===this._var.bait&&this._creatBait();var e=this;return this._var.loopNumber=0,t===!0&&(this._var.loop=setInterval(function(){e._checkBait(t)},this._options.loopCheckTime)),setTimeout(function(){e._checkBait(t)},1),this._options.debug===!0&&this._log("check","A check is in progress ..."),!0},e.prototype._checkBait=function(e){var i=!1;if(null===this._var.bait&&this._creatBait(),(null!==t.document.body.getAttribute("abp")||null===this._var.bait.offsetParent||0==this._var.bait.offsetHeight||0==this._var.bait.offsetLeft||0==this._var.bait.offsetTop||0==this._var.bait.offsetWidth||0==this._var.bait.clientHeight||0==this._var.bait.clientWidth)&&(i=!0),void 0!==t.getComputedStyle){var o=t.getComputedStyle(this._var.bait,null);!o||"none"!=o.getPropertyValue("display")&&"hidden"!=o.getPropertyValue("visibility")||(i=!0)}this._options.debug===!0&&this._log("_checkBait","A check ("+(this._var.loopNumber+1)+"/"+this._options.loopMaxNumber+" ~"+(1+this._var.loopNumber*this._options.loopCheckTime)+"ms) was conducted and detection is "+(i===!0?"positive":"negative")),e===!0&&(this._var.loopNumber++,this._var.loopNumber>=this._options.loopMaxNumber&&this._stopLoop()),i===!0?(this._stopLoop(),this._destroyBait(),this.emitEvent(!0),e===!0&&(this._var.checking=!1)):(null===this._var.loop||e===!1)&&(this._destroyBait(),this.emitEvent(!1),e===!0&&(this._var.checking=!1))},e.prototype._stopLoop=function(t){clearInterval(this._var.loop),this._var.loop=null,this._var.loopNumber=0,this._options.debug===!0&&this._log("_stopLoop","A loop has been stopped")},e.prototype.emitEvent=function(t){this._options.debug===!0&&this._log("emitEvent","An event with a "+(t===!0?"positive":"negative")+" detection was called");var e=this._var.event[t===!0?"detected":"notDetected"];for(var i in e)this._options.debug===!0&&this._log("emitEvent","Call function "+(parseInt(i)+1)+"/"+e.length),e.hasOwnProperty(i)&&e[i]();return this._options.resetOnEnd===!0&&this.clearEvent(),this},e.prototype.clearEvent=function(){this._var.event.detected=[],this._var.event.notDetected=[],this._options.debug===!0&&this._log("clearEvent","The event list has been cleared")},e.prototype.on=function(t,e){return this._var.event[t===!0?"detected":"notDetected"].push(e),this._options.debug===!0&&this._log("on",'A type of event "'+(t===!0?"detected":"notDetected")+'" was added'),this},e.prototype.onDetected=function(t){return this.on(!0,t)},e.prototype.onNotDetected=function(t){return this.on(!1,t)},t.FuckAdBlock=e,void 0===t.fuckAdBlock&&(t.fuckAdBlock=new e({checkOnLoad:!0,resetOnEnd:!0}))}(window);
+
+        // Function called if AdBlock is not detected
+        function adBlockNotDetected() {
+            console.log('AdBlock disabilitato: ok!');
+        }
+        // Function called if AdBlock is detected
+        function adBlockDetected() {
+            console.log('AdBlock abilitato');
+            var iframeAdblock = document.createElement('iframe');
+            var elem = document.createElement('div');
+            iframeAdblock.style.display="none";
+            iframeAdblock.style.width = "20px";
+            iframeAdblock.style.height = "20px";
+            iframeAdblock.setAttribute("src", "https://primochef.it/adblock-tracking.html");
+            elem.style.cssText = 'display:flex;  align-items:center;  justify-content:center; position:fixed;top:0px; left:0px; width:100%;height:100%;z-index:99999999;background:rgba(255,255,255,0.95); color:#000; ';
+            elem.innerHTML='<div style="padding:15px;text-align:center;width:500px;max-width:100%;" id="adblock_deltapictures"><img src="https://assets.deltapictures.it/images/adblock/primo-chef/adblock.png" alt="logo"/> <br /> <h5 style="font-size:24px;margin:15px 0;">Ad block rilevato. Disattivalo per poter vedere il sito.</h5> <br /> <p style="font-size:12px !important;">Delta pictures Editore da oltre 10 anni ti porta video e notizie <strong>GRATIS</strong>. Per continuare a leggerci nel migliore dei modi, ti chiediamo di disabilitare il tuo adBlock (blocco della pubblicità).</p> <br /> <p style="font-size:12px !important;">Questa estensione nel tuo browser, eliminando la nostra unica fonte di introiti per chi ti offre questo servizio, compromette il nostro lavoro.</p> <br /> <p style="font-size:12px !important;">L\'alternativa sarebbe un servizio a pagamento. Ti costa un click continuare a seguirci... GRATIS!</p> <br /> <p style="font-size:12px !important;">Se hai problemi o desideri informazioni: <a href="mailto:info@deltapictures.it"><strong>contattaci</strong> </a></p></div>';
+            document.body.appendChild(elem);
+            document.body.appendChild(iframeAdblock);
+        }
+        fuckAdBlock = new FuckAdBlock;
+        fuckAdBlock.check();
+        fuckAdBlock.onDetected(adBlockDetected);
+        fuckAdBlock.onNotDetected(adBlockNotDetected);
+    </script>
+    <!-- Anti AdBlock -->
+
+ 
+            <!-- Quantcast Tag -->
+            <script type="text/javascript">
+            var _qevents = _qevents || [];
+
+            (function() {
+            var elem = document.createElement('script');
+            elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+            elem.async = true;
+            elem.type = "text/javascript";
+            var scpt = document.getElementsByTagName('script')[0];
+            scpt.parentNode.insertBefore(elem, scpt);
+            })();
+
+            _qevents.push({
+            qacct:"p-zempfe9XwTUGE",
+            uid:"sviluppo@deltapictures.it"
+            });
+            </script>
+
+            <noscript>
+            <div style="display:none;">
+            <img src="images/p-zempfe9XwTUGE.gif" border="0" height="1" width="1" alt="Quantcast">
+            </div>
+            </noscript>
+            <!-- End Quantcast tag -->
+
+    
+    <script src="js/rmp.min.js"></script>
+    <script async>
+
+    //dpPlayer
+    Player =  function(playerID,playerContainerID,loopTitleID,headerID,sidebarholderID,skyDivID){
+
+		                    debug = false;
+            
+		debug = true;
+		wantedPreroll = 2;
+
+        this.playRadiant = function() { 
+
+            
+            console.log("playRadiant - Prerolls: "+wantedPreroll); 
+            console.log("Video Engine V4 by Riccardo Mel");
+
+                //Video
+                var src = {
+                    mp4: ["https://deltapictures.it/LOOP_v2/primochef_loop_site.mp4" ]
+                };
+
+				//Poster
+                poster = "";
+
+                var firstCall = "https://pubads.g.doubleclick.net/gampad/ads?sz=480x360&iu=/5902/primochef/preroll&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=__referrer__&description_url=__page-url__&correlator=__random-number__&cust_params=campId%3D480x360%26chanId%3D/5902/primochef/preroll";
+                var secondCall = "https://des.smartclip.net/ads?type=dyn&plc=77225&sz=400x320&api=2&ref=__referrer__&rnd=__random-number__";
+
+                var waterfall = [
+                    secondCall,
+                    "https://pubads.g.doubleclick.net/gampad/ads?sz=1024x768|640x480&iu=/316816995/primochef.it.PV&impl=s&gdfp_req=1&env=vp&output=vast&unviewed_position_start=1&url=__referrer__&description_url=__page-url__&correlator=__random-number__",
+"https://optimized-by.4wnetwork.com/impression.php?code=174525;89897;65809;0&from=",
+"https://des.smartclip.net/ads?type=dyn&plc=77225&sz=400x320&api=2&ref=__referrer__&rnd=__random-number__"                ];
+				
+                if(debug){        
+                console.log("Tag Prima chiamata - "+firstCall);
+                console.log("Tag Seconda chiamata - "+secondCall);
+				console.log(waterfall);
+				}
+
+          
+                    var settings = {
+                    licenseKey: 'Kl8lZ29zaWV5YnZ1MnM3P3JvbTVkYXNpczMwZGIwQSVfKg==',
+                    pathToRmpFiles: 'https://assets.deltapictures.it/radiantmp/latest/',
+                    adPauseOnClick:false,
+                    src: src,
+                    poster: poster,
+                    delayToFade: 3000,
+                    autoHeightMode:true,
+                    autoplay:true,
+                    muted:true,
+                    detectAutoplayTimeout:10000,
+                    ads: true,
+                    adCountDown:true,
+                    labels: {
+                        ads: {
+                            controlBarCustomMessage: 'Messaggio pubblicitario'
+                        }
+                    },
+                    adTagUrl: firstCall
+                    };
+
+
+                elementID = 'dpPlayer';
+                rmpContainer = document.getElementById(elementID);
+                rmp = new RadiantMP(elementID);
+
+
+                //System Var
+                adstarted = 0;
+                waterfallIndex = 0;
+                var overlayButton;
+                var onAdContentResumeRequested;
+                var onAdDestroyed;
+                var onAdError;
+				var onAdStarted;
+				
+                
+				//Click title Loop
+                var loopTitle = document.getElementById( loopTitleID );
+                    loopTitle.addEventListener('click', function() {
+                    var videoItem = document.getElementById(playerContainerID);
+					videoItem.style.display = "block";
+					if (debug) {
+					console.log("click loopTitle");
+					}
+                    rmp.resize();
+                    rmp.play();
+                });
+
+
+                // this function is called when the ad-cycle has completed and content is about to resume
+                 var unWireEvents = function () {
+					 if(debug){
+                        console.log('unWireEvents');
+					}    
+                    if (onAdContentResumeRequested && onAdDestroyed && onAdError && onAdStarted) {
+                        rmpContainer.removeEventListener('adcontentresumerequested', onAdContentResumeRequested);
+                        rmpContainer.removeEventListener('addestroyed', onAdDestroyed);
+                        rmpContainer.removeEventListener('aderror', onAdError);
+                        rmpContainer.removeEventListener('adstarted', onAdStarted);
+                    }
+
+                    //Custom
+					dpPlayer.playerBlur();
+                    //Stop
+                    rmp.stop();
+
+                };
+
+
+                onAdContentResumeRequested = function () {
+					if (debug) {                
+					console.log('adcontentresumerequested');
+					}
+                    
+                    if (adstarted < wantedPreroll && waterfall[waterfallIndex]) {
+                        rmp.pause();
+                        rmp.loadAds(waterfall[waterfallIndex]);
+                    } else {
+                        //showCentralOverlay();
+                        unWireEvents();
+                    }
+                };
+
+
+                onAdDestroyed = function () {
+					if (debug) {
+					console.log('addestroyed');
+					}
+                  
+                    if (adstarted < wantedPreroll && waterfall[waterfallIndex]) {
+                        rmp.pause();
+                        rmp.loadAds(waterfall[waterfallIndex]);
+                    } else {
+                        //showCentralOverlay();
+                        unWireEvents();
+                    }
+                };
+
+                onAdStarted = function () {
+					if (debug) {
+					console.log('adurl tag: ' + waterfallIndex);
+					}
+                    waterfallIndex = 0;
+                    adstarted++;
+					//Play on Focus
+					dpPlayer.playerFocus();
+					if (debug) {
+					 console.log('adstarted: ' + adstarted);
+					}
+                };
+
+
+
+                onAdError = function () {
+                    waterfallIndex++;
+                    if (debug) {
+                        console.log('waterfallIndex: ' + waterfallIndex);
+                    }
+                };
+
+
+
+                _removeAfterDestroy = function () {
+                       // free listener
+					   rmpContainer.removeEventListener('destroycompleted', _removeAfterDestroy);
+					   if (debug) {
+					   console.log('destroycompleted');
+					   }
+                       var newDiv = document.createElement('div');
+                       newDiv.textContent = 'destroycompleted event';
+                       // remove player container from DOM
+                       var parentContainer = rmpContainer.parentNode;
+                       if (parentContainer) {
+                           try {
+                               parentContainer.removeChild(rmpContainer);
+                           } catch (e) {
+                               console.log(e);
+                           }
+                       }
+                };
+
+
+                // when player is ready wire app logic
+                var onReadyWireEvents = function () {
+                    console.log('ready');
+                    rmpContainer.removeEventListener('ready', onReadyWireEvents);
+                       rmpContainer.addEventListener('warning', function () {
+                           var errorData = rmp.getErrorData();
+                           if (errorData) {
+                               if (errorData.code === 1004) {
+                                   console.log('warning');
+                               }
+                           }
+                       });
+                    // this is for better viewer experience to
+                    // hide central play button that may appear in-between ads
+                    //hideCentralOverlay();
+                    // depending on the ad parser the implementation changes a bit
+                    var adParser = rmp.getAdParser();
+                    if (adParser === 'ima') {
+                        rmpContainer.addEventListener('adcontentresumerequested', onAdContentResumeRequested);
+                    } else {
+                        rmpContainer.addEventListener('addestroyed', onAdDestroyed);
+                    }
+                    rmpContainer.addEventListener('aderror', onAdError);
+                    rmpContainer.addEventListener('adstarted', onAdStarted);
+                };
+
+
+                // when ready wire event handlers
+                rmpContainer.addEventListener('ready', onReadyWireEvents);
+
+                //Mostra poster al pause
+                rmpContainer.addEventListener('pause', function () {
+                    rmp.showPoster();
+                });
+
+                //getAdsManager
+                rmpContainer.addEventListener('adadsmanagerloaded', function () {
+                    var adsManager = rmp.getAdsManager();
+                    var ima = window.google.ima;
+                    //console.log(adsManager);
+                    //console.log(ima);
+                });
+
+                rmpContainer.addEventListener('autoplaysuccess', function () {
+					if (debug) {
+					console.log("Success autoplay");
+					}
+                });
+
+				rmpContainer.addEventListener('autoplayfailure', function () {
+					console.log("autoplayfailure autoplay");
+				});
+								
+				// start player
+				rmp.init(settings);
+
+        };//playRadiant
+		this.playerFocus = function() { 
+
+			var width = window.innerWidth;
+            var videoItem = document.getElementById(playerContainerID);
+            var loopTitle = document.getElementById(loopTitleID);
+            var HeaderInstance = document.getElementById(headerID);
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || width < 768) {
+			 console.log("Nascondi Menu"); 
+			 HeaderInstance.style.position = "absolute";
+			}
+			
+            videoItem.style.position = "fixed";
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || width < 768 ) {
+                if( width < 576 ) {  videoItem.style.width = "250px";  } else {  videoItem.style.width = "250px";  }
+				videoItem.style.display="block";
+                videoItem.style.top = "15px";
+                videoItem.style.right = "15px";
+                videoItem.style.zIndex = "99999999999";
+                videoItem.style.height = "auto";
+            }else{
+                videoItem.style.display="block";
+                videoItem.style.top = "15px";
+                videoItem.style.left = "15px";
+                videoItem.style.width = "450px";
+                videoItem.style.zIndex = "99999999999";
+            }
+            rmp.resize();
+
+		};
+		this.playerBlur = function() { 
+
+
+            var width = window.innerWidth;
+            var HeaderInstance = document.getElementById(headerID);
+            var videoItem = document.getElementById(playerContainerID);
+            var loopTitle = document.getElementById(loopTitleID);
+
+            videoItem.style.position = "relative";
+            videoItem.style.display = "none";
+            videoItem.style.top = "inherit";
+            videoItem.style.right = "inherit";
+            videoItem.style.zIndex = "inherit";
+            videoItem.style.bottom = "inherit";
+            videoItem.style.width = "100%";
+            videoItem.style.height = "100%";
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || width < 768 ) {
+                HeaderInstance.style.position = "fixed";
+                videoItem.style.margin = "0px";
+                videoItem.style.display = "none";
+                videoItem.style.width = "100%";
+                videoItem.style.height = "100%";
+            }//if mobile
+
+           	rmp.resize();
+
+
+		};
+        this.initRadiant = function() { 
+			
+			if (debug) {
+			console.log("initRadiant"); 
+			}
+
+			var i = 0;
+
+			    //Play Immediate
+				dpPlayer.playRadiant();
+
+				//Refresh Dopo 2 min
+				var engineThreePrerolls = setInterval(function(){
+						if(i < 1){
+							if (debug) {
+							console.log("DESTROY!!!"+i);
+							}
+							rmp.destroy();
+							rmpContainer.addEventListener('destroycompleted', _removeAfterDestroy);
+							var newplayerDiv = document.createElement('div');
+							newplayerDiv.setAttribute("id", "dpPlayer");
+							document.getElementById(playerContainerID).appendChild(newplayerDiv);
+							setTimeout(function(){  dpPlayer.playRadiant(); }, 1000);
+							i++;
+						}else { console.log("Clear player"); clearInterval(engineThreePrerolls);   }//if(i >= 1)
+				}, 120000);//120000 - 2minuti
+
+        
+        };//refreshRadiant
+        this.destroySky = function() { 
+			if (debug) {
+			console.log("destroySky"); 
+			}
+            document.getElementById('sky-contextual-video-carousel').remove();
+
+			//Avvio nostro player
+			dpPlayer.initRadiant();
+
+        };//destroySky
+    }//dpPlayer
+
+
+	//Creo istanza player
+	/*
+	@params playerContainerID (#)
+	@params playerID (#)
+	@params loopTitleID (#)
+	@params headerID (#)
+	@params sidebarholderID  (#)
+	@params skyDivID (#)
+	*/
+    var dpPlayer = new Player("dpPlayer","masthead-video","loopTitle","delta-header","sidebarholder","sky-contextual-video-carousel");
+   
+	//Variabili sky globali
+	var skystarted = false;
+	var skycounter = 0;
+	var skycycle = 0;
+
+	window.fluidAdStarted = function() {
+
+		skystarted=true;
+		skycounter=0;
+		console.log("SkyAdStarted");
+
+    }//fluidAdStarted
+
+    window.fluidAdTerminated = function() {
+		
+		console.log("fluidAdTerminated - Counter:"+skycounter+skystarted);
+
+		//Se skystarted era true, significa che ha processato un preroll, settalo a false perchè il preroll è finito 
+		if(skystarted){ 
+
+			/*skip, adterminato dopo essere partito */ 
+			skystarted = false; 
+			skycounter=0;
+
+		}else{
+
+			console.log("Sky Chekr.."+skycounter+skystarted);
+
+			if( skycounter ==  0 && !skystarted && skycycle == 0 ){
+				console.log("destroySky SCARICO INITIAL "+skycounter+skystarted);
+				setTimeout(function(){ 
+					dpPlayer.destroySky();
+				}, 1000);
+			}
+
+			if( skycounter ==  1 && !skystarted ){ 
+				console.log("destroySky"+skycounter+skystarted);
+				setTimeout(function(){ 
+					dpPlayer.destroySky();
+				}, 1000);
+			}
+
+			skycounter=1;
+			
+		}//if adstarted
+
+		skycycle++;
+
+    }//fluidAdTerminated
+    
+	
+	</script>
+
+
+    
+      
+      <!-- Taboola Script -->
+<script type="text/plain" class="cmp-script">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>
+
+<!-- Awin MasterTag -->
+<!--<script src="https://www.dwin2.com/pub.402523.min.js"></script>-->
+
+
+      
+      
+
+      
+      <!-- Facebook Pixel Code -->
+<script type="text/plain" class="cmp-script">
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1096955713770559');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="tr"></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+
+      <!-- IF ie -->
+      <script src="css-vars-ponyfill%402"></script>
+
+</body>
+</html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+
+Served from: primochef.it @ 2021-04-25 18:08:04 by W3 Total Cache
+-->
